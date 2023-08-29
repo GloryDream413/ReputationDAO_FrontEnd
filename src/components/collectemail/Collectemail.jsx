@@ -9,15 +9,22 @@ import { Link } from 'react-router-dom';
 export const Collectemail = () => {
   return (
     <div className="mainsection">
-      <div className="walletconnect">
+      <div className='menu'>
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-        <Link to="/collectemail"><button><h1>Connect Wallet</h1></button></Link>
-        <div className='icons'>
-          <img src={airdrop_icon} alt="airdrop"/>
-          <img src={dao_icon} alt="dao"/>
-          <img src={genesis_icon} alt="genesis"/>
+        <div className='genesis_icon'>
+            <img src={genesis_icon} alt="genesis_icon"/>
+            <h1>Genesis</h1>
+        </div>
+        <div className='dao_icon'>
+            <img src={dao_icon} alt="dao_icon"/>
+            <h1>DAO</h1>
+        </div>
+        <div className='airdrop_icon'>
+            <img src={airdrop_icon} alt="airdrop_icon"/>
+            <h1>Airdrop</h1>
         </div>
       </div>
+      <div className='content'></div>
     </div>
   );
 };
