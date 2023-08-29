@@ -1,12 +1,12 @@
 import React from 'react';
-import './dashboard.css';
+import './collectemail.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import genesis_icon from '../../assets/genesis_icon.png'
 import airdrop_icon from '../../assets/airdrop_icon.png'
 import dao_icon from '../../assets/dao_icon.png'
 import { Link } from 'react-router-dom';
 
-export const Dashboard = () => {
+export const Collectemail = () => {
   return (
     <div className="mainsection">
       <div className="walletconnect">
@@ -21,4 +21,4 @@ export const Dashboard = () => {
     </div>
   );
 };
-export default Dashboard;
+export default Collectemail;
