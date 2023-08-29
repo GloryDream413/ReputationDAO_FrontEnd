@@ -18,8 +18,8 @@
 
 .mainsection .menu img {
   margin-top: 30px;
-  margin-left: 15%;
-  width: 70%;
+  margin-left: 10%;
+  width: 80%;
   border-radius: 7px;
 }
 
@@ -28,18 +28,21 @@
   flex-direction: row;
   width: 80%;
   margin-left: 10%;
+  margin-top: 50px;
 }
 
 .mainsection .menu .genesis_icon img {
-  width: 10%;
-  margin-left: 10px;
+  width: 7%;
+  margin-left: 13px;
   align-items: center;
 }
+
 .mainsection .menu .genesis_icon h1 {
   margin-left: 10px;
+  width: 20%;
   color: #000;
   font-family: Inter;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -56,14 +59,14 @@
   margin-left: 10px;
   color: #888;
   font-family: Inter;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
 .mainsection .menu .dao_icon img {
-  width: 10%;
+  width: 7%;
   margin-left: 10px;
 }
 
@@ -75,7 +78,7 @@
 }
 
 .mainsection .menu .airdrop_icon img {
-  width: 10%;
+  width: 7%;
   margin-left: 10px;
 }
 
@@ -83,10 +86,24 @@
   margin-left: 10px;
   color: #888;
   font-family: Inter;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal; 
+}
+
+.mainsection .menu .social_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 300px;
+  margin-left: 35%;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.mainsection .menu .social_icon img {
+  margin-right: 20px;
 }
 
 .mainsection .content {
