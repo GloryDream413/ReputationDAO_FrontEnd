@@ -1,6 +1,7 @@
 .gpt3__header {
   display: flex;
   flex-direction: column;
+  
 }
 
 .gpt3__header .generate {
@@ -50,6 +51,8 @@
   flex-direction: column;
   justify-content: center;
   width: 45%;
+  height: 45%;
+  background-color: white;
 }
 
 .gpt3__header-content .generated {

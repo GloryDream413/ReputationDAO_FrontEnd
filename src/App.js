@@ -12,7 +12,7 @@ const App = () => {
     <UserContext.Provider value={{ nftRoute, setNftRoute }}>
       <div>
           <div className="gradient__bg">
-            <Header />
+            {/* <Header /> */}
             <Router>
               <Routes>
                   <Route path="/" element={<Dashboard />} />
@@ -20,7 +20,7 @@ const App = () => {
               </Routes>
             </Router>
           </div>
-          <Footer/>
+          {/* <Footer/> */}
       </div>
       <ToastContainer autoClose={3000} draggableDirection='x' />
     </UserContext.Provider>
