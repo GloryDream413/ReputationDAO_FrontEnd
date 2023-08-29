@@ -4,11 +4,10 @@ import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 
 export const Dashboard = () => {
   return (
-    <div className="gpt3__header section__padding" id="home">
-      <div className="gpt3__header-content">
-        <div className="original">
-          <img src={WalletConnectLogo} alt="ai" />
-        </div>
+    <div className="mainsection">
+      <div className="walletconnect">
+        <img src={WalletConnectLogo}/>
+        <button><h1>Connect Wallet</h1></button>
       </div>
     </div>
   );

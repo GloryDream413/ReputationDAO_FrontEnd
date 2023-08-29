@@ -1,80 +1,41 @@
-.gpt3__header {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.gpt3__header .generate {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.gpt3__header .generate span{
-  color: #2563eb;
-}
-
-.gpt3__header .generate button {
-    width: 30%;
-    min-height: 50px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    background: transparent;
-    border: 2px solid #14c2a3;
-    padding: 0 1rem;
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.gpt3__header h1 {
-  color:#fff;
-  font-weight: 400;
-  font-size: 3.75rem;
-}
-
-.gpt3__header-content {
+.mainsection {
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.gpt3__header-content .original {
+.mainsection .walletconnect {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 150px;
   width: 45%;
-  height: 45%;
-  background-color: white;
+  background: white;
+  border-radius: 5px;
 }
 
-.gpt3__header-content .generated {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 45%;
+.mainsection .walletconnect img {
+  margin-top: 30px;
+  margin-left: 15%;
+  width: 70%;
+  border-radius: 7px;
 }
 
-.gpt3__header-content h2 {
-  color:#fff;
-  font-size: 16px;
+.mainsection .walletconnect button {
+  border-radius: 13px;
+  background: #222;
+  margin-top: 30px;
+  margin-left: 25%;
+  width: 50%;
+  box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
 }
 
-.gpt3__header-content img {
-  margin-top: 10px;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  width:30%;
+.mainsection .walletconnect h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 61.023%; /* 22.239px */
 }
