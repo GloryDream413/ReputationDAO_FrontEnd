@@ -29,12 +29,14 @@
   width: 80%;
   margin-left: 10%;
   margin-top: 50px;
+  align-items: center;
 }
 
 .mainsection .menu .genesis_icon img {
   width: 7%;
+  height: 7%;
   margin-left: 13px;
-  align-items: center;
+  margin-top: 0px;
 }
 
 .mainsection .menu .genesis_icon h1 {
@@ -53,6 +55,7 @@
   flex-direction: row;
   width: 80%;
   margin-left: 10%;
+  align-items: center;
 }
 
 .mainsection .menu .dao_icon h1 {
@@ -67,7 +70,9 @@
 
 .mainsection .menu .dao_icon img {
   width: 7%;
-  margin-left: 10px;
+  height: 7%;
+  margin-left: 13px;
+  margin-top: 0px;
 }
 
 .mainsection .menu .airdrop_icon {
@@ -75,11 +80,14 @@
   flex-direction: row;
   width: 80%;
   margin-left: 10%;
+  align-items: center;
 }
 
 .mainsection .menu .airdrop_icon img {
   width: 7%;
-  margin-left: 10px;
+  height: 7%;
+  margin-left: 13px;
+  margin-top: 0px;
 }
 
 .mainsection .menu .airdrop_icon h1 {
