@@ -21,6 +21,7 @@ export const Dashboard = () => {
     {
       SetWalletAddress(walletResponse.address);
       toast.success('Successfully Connected.');
+      window.location.href = 'http://localhost:3000/collectemail';
     }
   };
 
