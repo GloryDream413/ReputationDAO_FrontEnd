@@ -117,4 +117,35 @@
 .mainsection .content {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.mainsection .content .walletinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.mainsection .content .walletinfo .walletaddress {
+  width: 143.27px;
+  height: 38.738px;
+  flex-shrink: 0;
+  border-radius: 6.149px;
+  background: #FFF;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
+}
+
+.mainsection .content .mainlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+.mainsection .content .mainlogo img {
+  width: 150px;
+  height: 123.913px;
 }

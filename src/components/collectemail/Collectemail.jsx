@@ -1,6 +1,7 @@
 import React from 'react';
 import './collectemail.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
+import mainlogo from '../../assets/mainlogo.png'
 import genesis_icon from '../../assets/genesis_icon.png'
 import airdrop_icon from '../../assets/airdrop_icon.png'
 import dao_icon from '../../assets/dao_icon.png'
@@ -32,7 +33,16 @@ export const Collectemail = () => {
             <img src={telegram_icon} alt="telegram_icon"/>
         </div>
       </div>
-      <div className='content'></div>
+      <div className='content'>
+        <div className='walletinfo'>
+            <div className='walletaddress'>
+                
+            </div>
+        </div>
+        <div className='mainlogo'>
+            <img src={mainlogo} alt="mainlogo"/>
+        </div>
+      </div>
     </div>
   );
 };
