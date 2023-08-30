@@ -16,6 +16,7 @@ body {
 .mainsection .menu {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   background: white;
   width: 25%;
   margin-left: 20px;
@@ -112,7 +113,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 100%;
   margin-left: 35%;
   width: 30%;
   margin-bottom: 20px;
