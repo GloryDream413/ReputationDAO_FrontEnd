@@ -174,13 +174,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
-.title h1 {
-  margin-left: 25%;
+.mainsection .content .title h1 {
+  width: 60%;
   color: #000;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -193,8 +194,6 @@
 }
 
 .description h1 {
-  width: 793px;
-  height: 122px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
