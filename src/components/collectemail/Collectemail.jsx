@@ -73,6 +73,22 @@ export const Collectemail = () => {
                 </div>
             </div>
         </div>
+        <div className='items1'>
+            <div className='item'>Sustainability</div>
+            <div className='item'>Prosperity</div>
+            <div className='item'>Security</div>
+            <div className='item'>Collaboration</div>
+            <div className='item'>Growth</div>
+            <div className='item'>Improvement</div>
+        </div>
+        <div className='items2'>
+            <div className='item'>Innovation</div>
+            <div className='item'>Community</div>
+            <div className='item'>Meaning</div>
+            <div className='item'>Reputation</div>
+            <div className='item'>Reliability</div>
+            <div className='item'>Value</div>
+        </div>
       </div>
     </div>
   );

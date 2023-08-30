@@ -349,3 +349,51 @@
 .fifth label {
   width: 100px;
 }
+
+.mainsection .content .items1 {
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items1 .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 32.429px;
+  flex-shrink: 0;
+  border-radius: 6.236px;
+  border: 1.5px solid #8E66FF;
+  background: #FFF;
+}
+
+.mainsection .content .items2 {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items2 .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 32.429px;
+  flex-shrink: 0;
+  border-radius: 6.236px;
+  border: 1.5px solid #8E66FF;
+  background: #FFF;
+}
