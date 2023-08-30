@@ -52,12 +52,25 @@ export const Collectemail = () => {
         <div className='userselect'>
             <div className='userselectboard'>
                 <div className='first'>
-
+                    <h1>1.</h1>
+                    <label></label>
                 </div>
-                <div className='second'></div>
-                <div className='third'></div>
-                <div className='fourth'></div>
-                <div className='fifth'></div>
+                <div className='second'>
+                    <h1>2.</h1>
+                    <label></label>
+                </div>
+                <div className='third'>
+                    <h1>3.</h1>
+                    <label></label>
+                </div>
+                <div className='fourth'>
+                    <h1>4.</h1>
+                    <label></label>
+                </div>
+                <div className='fifth'>
+                    <h1>5.</h1>
+                    <label></label>
+                </div>
             </div>
         </div>
       </div>

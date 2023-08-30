@@ -222,32 +222,87 @@
 }
 
 .userselectboard .first {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   height: 43.247px;
   flex-shrink: 0;
   border-radius: 8.317px;
   background: #FFF;
+}
+
+.first h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16.633px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.first label {
+  width: 100px;
 }
 
 .userselectboard .second {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 150px;
   height: 43.247px;
   flex-shrink: 0;
   border-radius: 8.317px;
   background: #FFF;
+}
+
+.second h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16.633px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.second label {
+  width: 100px;
 }
 
 .userselectboard .third {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 150px;
   height: 43.247px;
   flex-shrink: 0;
   border-radius: 8.317px;
   background: #FFF;
+}
+
+.third h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16.633px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.third label {
+  width: 100px;
 }
 
 .userselectboard .fourth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 150px;
   height: 43.247px;
@@ -256,11 +311,41 @@
   background: #FFF;
 }
 
+.fourth h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16.633px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.fourth label {
+  width: 100px;
+}
+
 .userselectboard .fifth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 150px;
   height: 43.247px;
   flex-shrink: 0;
   border-radius: 8.317px;
   background: #FFF;
+}
+
+.fifth h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16.633px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.fifth label {
+  width: 100px;
 }
