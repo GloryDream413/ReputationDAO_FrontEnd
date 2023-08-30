@@ -45,50 +45,13 @@ export const Collectemail = () => {
             <img src={mainlogo} alt="mainlogo"/>
         </div>
         <div className='title'>
-            <h1>Next, pick your principles</h1>
+            <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
         </div>
         <div className='description'>
-            <h1>Principles are the values you really care about. Reputation DAO will ask you to rate a proposal on its alignment with the communities values. Your top 5 are in no particular order!</h1>
+            <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
         </div>
-        <div className='userselect'>
-            <div className='userselectboard'>
-                <div className='first'>
-                    <h1>1.</h1>
-                    <label></label>
-                </div>
-                <div className='second'>
-                    <h1>2.</h1>
-                    <label></label>
-                </div>
-                <div className='third'>
-                    <h1>3.</h1>
-                    <label></label>
-                </div>
-                <div className='fourth'>
-                    <h1>4.</h1>
-                    <label></label>
-                </div>
-                <div className='fifth'>
-                    <h1>5.</h1>
-                    <label></label>
-                </div>
-            </div>
-        </div>
-        <div className='items1'>
-            <div className='item'>Sustainability</div>
-            <div className='item'>Prosperity</div>
-            <div className='item'>Security</div>
-            <div className='item'>Collaboration</div>
-            <div className='item'>Growth</div>
-            <div className='item'>Improvement</div>
-        </div>
-        <div className='items2'>
-            <div className='item'>Innovation</div>
-            <div className='item'>Community</div>
-            <div className='item'>Meaning</div>
-            <div className='item'>Reputation</div>
-            <div className='item'>Reliability</div>
-            <div className='item'>Value</div>
+        <div className='email'>
+            <input placeholder='Insert email address'></input>
         </div>
         <Link to="/criteria"><button><h1>Next</h1></button></Link>
       </div>

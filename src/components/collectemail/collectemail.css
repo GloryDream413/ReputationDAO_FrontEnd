@@ -177,6 +177,7 @@
 }
 
 .title h1 {
+  width: 60%;
   color: #000;
   font-family: Inter;
   font-size: 48px;
@@ -193,7 +194,7 @@
 
 .description h1 {
   width: 793px;
-  height: 122px;
+  height: 100px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
@@ -203,199 +204,30 @@
   line-height: normal;
 }
 
-.mainsection .content .userselect {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.userselect .userselectboard {
+.mainsection .content .email {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 870px;
-  height: 88px;
-  flex-shrink: 0;
-  border-radius: 8.317px;
-  background: linear-gradient(180deg, #8E66FF 0%, #FFB8C5 100%);
 }
 
-.userselectboard .first {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 43.247px;
+.email input {
+  width: 548px;
+  height: 51px;
   flex-shrink: 0;
-  border-radius: 8.317px;
+  border-radius: 10px;
+  border: 1px solid #000;
   background: #FFF;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
 }
-
-.first h1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 16.633px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.first label {
-  width: 100px;
-}
-
-.userselectboard .second {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  width: 150px;
-  height: 43.247px;
-  flex-shrink: 0;
-  border-radius: 8.317px;
-  background: #FFF;
-}
-
-.second h1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 16.633px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.second label {
-  width: 100px;
-}
-
-.userselectboard .third {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  width: 150px;
-  height: 43.247px;
-  flex-shrink: 0;
-  border-radius: 8.317px;
-  background: #FFF;
-}
-
-.third h1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 16.633px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.third label {
-  width: 100px;
-}
-
-.userselectboard .fourth {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  width: 150px;
-  height: 43.247px;
-  flex-shrink: 0;
-  border-radius: 8.317px;
-  background: #FFF;
-}
-
-.fourth h1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 16.633px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.fourth label {
-  width: 100px;
-}
-
-.userselectboard .fifth {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  width: 150px;
-  height: 43.247px;
-  flex-shrink: 0;
-  border-radius: 8.317px;
-  background: #FFF;
-}
-
-.fifth h1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 16.633px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.fifth label {
-  width: 100px;
-}
-
-.mainsection .content .items1 {
-  margin-top: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.items1 .item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 32.429px;
-  flex-shrink: 0;
-  border-radius: 6.236px;
-  border: 1.5px solid #8E66FF;
-  background: #FFF;
-}
-
-.mainsection .content .items2 {
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.items2 .item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 32.429px;
-  flex-shrink: 0;
-  border-radius: 6.236px;
-  border: 1.5px solid #8E66FF;
-  background: #FFF;
+  
+.email input::placeholder {
+  /* Center the placeholder text vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #aaa; /* Placeholder text color */
 }
 
 .mainsection .content button {
