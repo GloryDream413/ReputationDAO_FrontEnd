@@ -397,3 +397,29 @@
   border: 1.5px solid #8E66FF;
   background: #FFF;
 }
+
+.mainsection .content button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  background: #222;
+  margin-top: 30px;
+  margin-left: 40%;
+  margin-bottom: 30px;
+  width: 20%;
+  height: 82px;
+  flex-shrink: 0;
+  box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
+}
+
+.mainsection .content button h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36.444px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Collectemail, Dashboard } from './components'
+import { Collectemail, Dashboard, Principle } from './components'
 import { useState, createContext } from 'react'
 import './App.css'
 import { ToastContainer } from 'react-toastify';
@@ -13,7 +13,7 @@ const App = () => {
       <Router>
         <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/collectemail" element={<Collectemail />} />
+            <Route path="/principle" element={<Principle />} />
         </Routes>
       </Router>
       <ToastContainer autoClose={3000} draggableDirection='x' />
