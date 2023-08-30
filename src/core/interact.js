@@ -5,10 +5,10 @@ export const connectWallet = async () => {
         method: "eth_requestAccounts",
       });
       
-      // await window.ethereum.request({
-      //   method: 'wallet_switchEthereumChain',
-      //   params: [{ chainId: '0x1' }],
-      // })
+      await window.ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId: '0x1' }],
+      })
 
       const obj = {
         status: "Metamask successfuly connected.",

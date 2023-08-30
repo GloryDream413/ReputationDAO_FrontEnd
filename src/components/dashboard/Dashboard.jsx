@@ -6,7 +6,7 @@ import airdrop_icon from '../../assets/airdrop_icon.png'
 import dao_icon from '../../assets/dao_icon.png'
 import { connectWallet } from '../../core/interact';
 import { UserContext } from "../../App";
-import { NotificationManager } from 'react-notifications';
+import { toast } from 'react-toastify';
 
 export const Dashboard = () => {
   const { SetWalletAddress } = useContext(UserContext);
@@ -15,12 +15,12 @@ export const Dashboard = () => {
     if(walletResponse.address === '')
     {
       SetWalletAddress('');
-      NotificationManager.warning('Please Install Metamask or Add Polygon Chain on your wallet.', 'Warning');
+      toast.error('Not Connected.\n' + walletResponse.status);
     }
     else
     {
       SetWalletAddress(walletResponse.address);
-      NotificationManager.success('Connected Successfully.', 'Success');
+      toast.success('Successfully Connected.');
     }
   };
 
