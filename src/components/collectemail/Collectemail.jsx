@@ -8,7 +8,7 @@ import dao_icon from '../../assets/dao_icon.png'
 import vector_icon from '../../assets/vector_icon.png'
 import twitter_icon from '../../assets/twitter_icon.png'
 import telegram_icon from '../../assets/telegram_icon.png'
-import { Link } from 'react-router-dom';
+import connected_status_icon from '../../assets/connected_status.png'
 
 export const Collectemail = () => {
   return (
@@ -36,7 +36,8 @@ export const Collectemail = () => {
       <div className='content'>
         <div className='walletinfo'>
             <div className='walletaddress'>
-                
+                <img src={connected_status_icon} alt="connected_status_icon"/>
+                <h1>0x...43Js</h1>
             </div>
         </div>
         <div className='mainlogo'>
