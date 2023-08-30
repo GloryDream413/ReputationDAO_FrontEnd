@@ -90,7 +90,7 @@ export const Principle = () => {
             <div className='item'>Reliability</div>
             <div className='item'>Value</div>
         </div>
-        <Link to="/criteria"><button><h1>Next</h1></button></Link>
+        <button><Link to="/criteria"><h1>Next</h1></Link></button>
       </div>
     </div>
   );

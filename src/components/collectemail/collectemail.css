@@ -177,10 +177,10 @@
 }
 
 .title h1 {
-  width: 60%;
+  width: 793px;
   color: #000;
   font-family: Inter;
-  font-size: 48px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -216,6 +216,7 @@
   height: 51px;
   flex-shrink: 0;
   border-radius: 10px;
+  text-align: center;
   border: 1px solid #000;
   background: #FFF;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);

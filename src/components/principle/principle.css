@@ -177,11 +177,12 @@
 }
 
 .title h1 {
+  margin-left: 25%;
   color: #000;
   font-family: Inter;
-  font-size: 48px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -197,7 +198,7 @@
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

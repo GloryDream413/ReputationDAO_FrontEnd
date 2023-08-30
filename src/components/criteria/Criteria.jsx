@@ -116,7 +116,7 @@ export const Criteria = () => {
             </div>
           </div>
         </div>
-        <Link to="/result"><button><h1>Submit</h1></button></Link>
+        <button><Link to="/result"><h1>Submit</h1></Link></button>
       </div>
     </div>
   );
