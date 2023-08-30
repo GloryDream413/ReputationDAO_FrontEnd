@@ -18,11 +18,10 @@ body {
   flex-direction: column;
   background: white;
   width: 25%;
-  height: 100%;
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .mainsection .menu img {
@@ -42,8 +41,8 @@ body {
 }
 
 .mainsection .menu .genesis_icon img {
-  width: 7%;
-  height: 7%;
+  width: 16px;
+  height: 16px;
   margin-left: 13px;
   margin-top: 0px;
 }
@@ -78,8 +77,8 @@ body {
 }
 
 .mainsection .menu .dao_icon img {
-  width: 7%;
-  height: 7%;
+  width: 16px;
+  height: 16px;
   margin-left: 13px;
   margin-top: 0px;
 }
@@ -93,8 +92,8 @@ body {
 }
 
 .mainsection .menu .airdrop_icon img {
-  width: 7%;
-  height: 7%;
+  width: 16px;
+  height: 16px;
   margin-left: 13px;
   margin-top: 0px;
 }
@@ -204,8 +203,6 @@ body {
 }
 
 .mainsection .content .description h1 {
-  width: 793px;
-  height: 100px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
