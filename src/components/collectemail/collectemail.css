@@ -188,15 +188,79 @@
 .mainsection .content .description {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .description h1 {
-  margin-left: 20%;
-  width: 60%;
+  width: 793px;
+  height: 122px;
+  flex-shrink: 0;
   color: #000;
   font-family: Inter;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.mainsection .content .userselect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.userselect .userselectboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 870px;
+  height: 88px;
+  flex-shrink: 0;
+  border-radius: 8.317px;
+  background: linear-gradient(180deg, #8E66FF 0%, #FFB8C5 100%);
+}
+
+.userselectboard .first {
+  width: 150px;
+  height: 43.247px;
+  flex-shrink: 0;
+  border-radius: 8.317px;
+  background: #FFF;
+}
+
+.userselectboard .second {
+  margin-left: 10px;
+  width: 150px;
+  height: 43.247px;
+  flex-shrink: 0;
+  border-radius: 8.317px;
+  background: #FFF;
+}
+
+.userselectboard .third {
+  margin-left: 10px;
+  width: 150px;
+  height: 43.247px;
+  flex-shrink: 0;
+  border-radius: 8.317px;
+  background: #FFF;
+}
+
+.userselectboard .fourth {
+  margin-left: 10px;
+  width: 150px;
+  height: 43.247px;
+  flex-shrink: 0;
+  border-radius: 8.317px;
+  background: #FFF;
+}
+
+.userselectboard .fifth {
+  margin-left: 10px;
+  width: 150px;
+  height: 43.247px;
+  flex-shrink: 0;
+  border-radius: 8.317px;
+  background: #FFF;
 }

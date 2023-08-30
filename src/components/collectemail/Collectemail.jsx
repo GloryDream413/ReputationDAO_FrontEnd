@@ -49,6 +49,17 @@ export const Collectemail = () => {
         <div className='description'>
             <h1>Principles are the values you really care about. Reputation DAO will ask you to rate a proposal on its alignment with the communities values. Your top 5 are in no particular order!</h1>
         </div>
+        <div className='userselect'>
+            <div className='userselectboard'>
+                <div className='first'>
+
+                </div>
+                <div className='second'></div>
+                <div className='third'></div>
+                <div className='fourth'></div>
+                <div className='fifth'></div>
+            </div>
+        </div>
       </div>
     </div>
   );
