@@ -9,6 +9,8 @@ import vector_icon from '../../assets/vector_icon.png'
 import twitter_icon from '../../assets/twitter_icon.png'
 import telegram_icon from '../../assets/telegram_icon.png'
 import connected_status_icon from '../../assets/connected_status.png'
+import general_check from '../../assets/general_check.png';
+import general_cross from '../../assets/general_cross.png';
 import { Link } from 'react-router-dom';
 
 export const Criteria = () => {
@@ -50,8 +52,69 @@ export const Criteria = () => {
         <div className='description'>
             <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
         </div>
-        <div className='email'>
-            <input placeholder='Insert email address'></input>
+        <div className='options'>
+          <div className='option'>
+            <h1>Commercialise reputation and verification services.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
+          <div className='option'>
+            <h1>Provide liquidity to other protocols.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
+        </div>
+        <div className='options'>
+          <div className='option'>
+            <h1>Utilise treasury funds in yield and staking.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
+          <div className='option'>
+            <h1>Fund bad actor detection and bounty hunting.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
+        </div>
+        <div className='options'>
+          <div className='option'>
+            <h1>Fund development of RDAO ecosystem.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
+          <div className='option'>
+            <h1>Actively manage DAO as an investment fund.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
+        </div>
+        <div className='options'>
+          <div className='option'>
+            <h1>Invest in early stage protocols.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
+          <div className='option'>
+            <h1>Invest in NFT’s.</h1>
+            <div className='checkbuttons'>
+              <img src={general_check} alt="general_check"/>
+              <img src={general_cross} alt="general_cross"/>
+            </div>
+          </div>
         </div>
         <Link to="/result"><button><h1>Submit</h1></button></Link>
       </div>
