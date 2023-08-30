@@ -23,6 +23,12 @@
 
 .mainsection .walletconnect button {
   border-radius: 13px;
+  width: 100%;
+  background: #222;
+}
+
+.mainsection .walletconnect .buttonclass {
+  border-radius: 13px;
   background: #222;
   margin-top: 30px;
   margin-left: 25%;
@@ -37,7 +43,7 @@
   font-size: 30;
   font-style: normal;
   font-weight: 600;
-  line-height: 61.023%; /* 22.239px */
+  line-height: 61.023%;
 }
 
 .mainsection .walletconnect .icons {

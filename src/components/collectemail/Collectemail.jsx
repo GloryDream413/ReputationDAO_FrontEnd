@@ -53,7 +53,7 @@ export const Collectemail = () => {
         <div className='email'>
             <input placeholder='Insert email address'></input>
         </div>
-        <Link to="/principle"><button><h1>Next</h1></button></Link>
+        <button><Link to="/principle"><h1>Next</h1></Link></button>
       </div>
     </div>
   );

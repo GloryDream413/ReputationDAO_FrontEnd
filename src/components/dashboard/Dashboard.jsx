@@ -11,7 +11,7 @@ export const Dashboard = () => {
     <div className="mainsection">
       <div className="walletconnect">
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-        <Link to="/collectemail"><button><h1>Connect Wallet</h1></button></Link>
+        <Link to="/collectemail" className='buttonclass'><button><h1>Connect Wallet</h1></button></Link>
         <div className='icons'>
           <img src={airdrop_icon} alt="airdrop"/>
           <img src={dao_icon} alt="dao"/>

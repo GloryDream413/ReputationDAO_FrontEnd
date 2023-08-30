@@ -255,3 +255,7 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.mainsection .content a {
+  text-decoration: none;
+}
