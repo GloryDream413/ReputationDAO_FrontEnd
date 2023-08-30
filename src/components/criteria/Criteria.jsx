@@ -45,15 +45,15 @@ export const Criteria = () => {
             <img src={mainlogo} alt="mainlogo"/>
         </div>
         <div className='title'>
-            <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
+            <h1>Lastly, pick your criteria</h1>
         </div>
         <div className='description'>
-            <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
+            <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
         </div>
         <div className='email'>
             <input placeholder='Insert email address'></input>
         </div>
-        <Link to="/principle"><button><h1>Next</h1></button></Link>
+        <Link to="/result"><button><h1>Submit</h1></button></Link>
       </div>
     </div>
   );
