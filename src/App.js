@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState, createContext } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Dashboard, Collectemail, Principle, Criteria, Result } from './components'
 import './App.css'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+export const UserContext = createContext(null)
 const App = () => {
+  const [walletAddress, SetWalletAddress] = useState('');
   return (
-    <div>
+    <UserContext.Provider value={{ walletAddress, SetWalletAddress }}>
       <Router>
         <Routes>
             <Route path="/" element={<Dashboard />} />
@@ -17,7 +19,7 @@ const App = () => {
         </Routes>
       </Router>
       <ToastContainer autoClose={3000} draggableDirection='x' />
-    </div>
+    </UserContext.Provider>
   );
 }
 export default App

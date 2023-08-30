@@ -23,12 +23,6 @@
 
 .mainsection .walletconnect button {
   border-radius: 13px;
-  width: 100%;
-  background: #222;
-}
-
-.mainsection .walletconnect .buttonclass {
-  border-radius: 13px;
   background: #222;
   margin-top: 30px;
   margin-left: 25%;
