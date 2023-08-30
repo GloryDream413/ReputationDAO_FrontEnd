@@ -9,8 +9,9 @@ import vector_icon from '../../assets/vector_icon.png'
 import twitter_icon from '../../assets/twitter_icon.png'
 import telegram_icon from '../../assets/telegram_icon.png'
 import connected_status_icon from '../../assets/connected_status.png'
-import general_check from '../../assets/general_check.png';
-import general_cross from '../../assets/general_cross.png';
+import confirm_check from '../../assets/confirm_check.png';
+import confirm_cross from '../../assets/confirm_cross.png';
+import clock_icon from '../../assets/clock_icon.png';
 
 export const Result = () => {
   return (
@@ -46,24 +47,57 @@ export const Result = () => {
             <img src={mainlogo} alt="mainlogo"/>
         </div>
         <div className='title'>
-            <h1>Lastly, pick your criteria</h1>
+            <h1>Results</h1>
         </div>
         <div className='description'>
-            <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
+            <h1>Once votes have been collected, the DAO will be open for proposals and use these principles and criteria to evaluate proposals!</h1>
+        </div>
+        <div className='timelabel'>
+          <h1>Genesis ends in:</h1> 
+        </div>
+        <div className='timedialog'>
+          <div className='timedialogdisplay'>
+            <img src={clock_icon} alt="clock_icon"/>
+            <h1>24D, 2h, 15m, 11s</h1>
+          </div>
+        </div>
+        <div className='userselect'>
+            <div className='userselectboard'>
+                <div className='first'>
+                    <h1>1.</h1>
+                    <label></label>
+                </div>
+                <div className='second'>
+                    <h1>2.</h1>
+                    <label></label>
+                </div>
+                <div className='third'>
+                    <h1>3.</h1>
+                    <label></label>
+                </div>
+                <div className='fourth'>
+                    <h1>4.</h1>
+                    <label></label>
+                </div>
+                <div className='fifth'>
+                    <h1>5.</h1>
+                    <label></label>
+                </div>
+            </div>
         </div>
         <div className='options'>
           <div className='option'>
             <h1>Commercialise reputation and verification services.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <img src={confirm_check} alt="confirm_check"/>
+              <h1>75%</h1>
             </div>
           </div>
           <div className='option'>
             <h1>Provide liquidity to other protocols.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <img src={confirm_check} alt="confirm_check"/>
+              <h1>75%</h1>
             </div>
           </div>
         </div>
@@ -71,15 +105,15 @@ export const Result = () => {
           <div className='option'>
             <h1>Utilise treasury funds in yield and staking.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <h1>55%</h1>
+              <img src={confirm_cross} alt="confirm_cross"/>
             </div>
           </div>
           <div className='option'>
             <h1>Fund bad actor detection and bounty hunting.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <h1>55%</h1>
+              <img src={confirm_cross} alt="confirm_cross"/>
             </div>
           </div>
         </div>
@@ -87,15 +121,15 @@ export const Result = () => {
           <div className='option'>
             <h1>Fund development of RDAO ecosystem.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <img src={confirm_check} alt="confirm_check"/>
+              <h1>75%</h1>
             </div>
           </div>
           <div className='option'>
             <h1>Actively manage DAO as an investment fund.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <img src={confirm_check} alt="confirm_check"/>
+              <h1>75%</h1>
             </div>
           </div>
         </div>
@@ -103,15 +137,15 @@ export const Result = () => {
           <div className='option'>
             <h1>Invest in early stage protocols.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <h1>55%</h1>
+              <img src={confirm_cross} alt="confirm_cross"/>
             </div>
           </div>
           <div className='option'>
             <h1>Invest in NFT’s.</h1>
             <div className='checkbuttons'>
-              <img src={general_check} alt="general_check"/>
-              <img src={general_cross} alt="general_cross"/>
+              <h1>55%</h1>
+              <img src={confirm_cross} alt="confirm_cross"/>
             </div>
           </div>
         </div>
