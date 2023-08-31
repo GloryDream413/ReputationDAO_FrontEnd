@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './collectemail.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -23,6 +23,10 @@ export const Collectemail = () => {
     connectWalletPressed();
   })
 
+  const [email, SetEmail] = useState('');
+  const onEmailChange = (event) => {
+    SetEmail(event.target.value);
+  };
   return (
     <div className="mainsection">
       <div className='menu'>
@@ -68,7 +72,10 @@ export const Collectemail = () => {
             <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
         </div>
         <div className='email'>
-            <input placeholder='Insert email address'></input>
+            <input 
+              placeholder='Insert email address'
+              value={email}
+              onChange={onEmailChange} />
         </div>
         <button><Link to="/principle"><h1>Next</h1></Link></button>
       </div>
