@@ -18,6 +18,7 @@ import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
 import { connectWallet } from '../../core/interact';
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 export const Criteria = () => {
   const navigate = useNavigate();
@@ -117,35 +118,46 @@ export const Criteria = () => {
       toast.error("Please check all items.");
       return;
     }
+
+    const data = {
+      address: walletAddress,
+      email: email,
+      principles: [principle1, principle2, principle3, principle4, principle5],
+      criteria: {
+        "Commercialise reputation and verification services.": isVote[item1Status],
+        "Provide liquidity to other protocols.": isVote[item2Status],
+        "Utilise treasury funds in yield and staking.": isVote[item3Status],
+        "Fund bad actor detection and bounty hunting.": isVote[item4Status],
+        "Fund development of RDAO ecosystem.": isVote[item5Status],
+        "Actively manage DAO as an investment fund.": isVote[item6Status],
+        "Invest in early stage protocols.": isVote[item7Status],
+        "Invest in NFT’s.": isVote[item8Status]
+      }
+    }
+
     try {
       const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
       const account = accounts[0];
   
-      const message = "Hello, MetaMask!";
+      const message = JSON.stringify(data);
       const signature = await window.ethereum.request({
         method: 'personal_sign',
         params: [message, account],
       });
-  
-      console.log("Message:", message);
-      console.log("Signature:", signature);
-      const data = {
-        address: walletAddress,
-        email: email,
-        principles: [principle1, principle2, principle3, principle4, principle5],
-        criteria: {
-          "Commercialise reputation and verification services.": isVote[item1Status],
-          "Provide liquidity to other protocols.": isVote[item2Status],
-          "Utilise treasury funds in yield and staking.": isVote[item3Status],
-          "Fund bad actor detection and bounty hunting.": isVote[item4Status],
-          "Fund development of RDAO ecosystem.": isVote[item5Status],
-          "Actively manage DAO as an investment fund.": isVote[item6Status],
-          "Invest in early stage protocols.": isVote[item7Status],
-          "Invest in NFT’s.": isVote[item8Status]
-        }
-      }
 
-      console.log(data);
+      const response = await axios.post('http://65.108.142.188:3501/api/genesis/save_proposal',
+        {
+            data: data,
+            signData: signature
+        },
+        {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+        }
+      );
+      
+      console.log(response);
       navigate("/result");
     } catch (error) {
       console.error("Error signing message:", error);
