@@ -22,22 +22,33 @@ export const Principle = () => {
     };
     connectWalletPressed();
   })
+
+  const onClickItem = (event) => {
+    
+  }
+
   return (
     <div className="mainsection">
       <div className='menu'>
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
+        <Link to="/collectemail">
         <div className='genesis_icon'>
             <img src={genesis_icon} alt="genesis_icon"/>
             <h1>Genesis</h1>
         </div>
+        </Link>
+        <Link to="/coming">
         <div className='dao_icon'>
             <img src={dao_icon} alt="dao_icon"/>
             <h1>DAO</h1>
         </div>
+        </Link>
+        <Link to="/coming">
         <div className='airdrop_icon'>
             <img src={airdrop_icon} alt="airdrop_icon"/>
             <h1>Airdrop</h1>
         </div>
+        </Link>
         <div className='social_icon'>
             <img src={vector_icon} alt="vector_icon"/>
             <img src={twitter_icon} alt="twitter_icon"/>
@@ -85,20 +96,20 @@ export const Principle = () => {
             </div>
         </div>
         <div className='items1'>
-            <div className='item'>Sustainability</div>
-            <div className='item'>Prosperity</div>
-            <div className='item'>Security</div>
-            <div className='item'>Collaboration</div>
-            <div className='item'>Growth</div>
-            <div className='item'>Improvement</div>
+            <div className='item' id="Sustainability" onClick={onClickItem}>Sustainability</div>
+            <div className='item' id="Prosperity" onClick={onClickItem}>Prosperity</div>
+            <div className='item' id="Security" onClick={onClickItem}>Security</div>
+            <div className='item' id="Collaboration" onClick={onClickItem}>Collaboration</div>
+            <div className='item' id="Growth" onClick={onClickItem}>Growth</div>
+            <div className='item' id="Improvement" onClick={onClickItem}>Improvement</div>
         </div>
         <div className='items2'>
-            <div className='item'>Innovation</div>
-            <div className='item'>Community</div>
-            <div className='item'>Meaning</div>
-            <div className='item'>Reputation</div>
-            <div className='item'>Reliability</div>
-            <div className='item'>Value</div>
+            <div className='item' id="Innovation" onClick={onClickItem}>Innovation</div>
+            <div className='item' id="Community" onClick={onClickItem}>Community</div>
+            <div className='item' id="Meaning" onClick={onClickItem}>Meaning</div>
+            <div className='item' id="Reputation" onClick={onClickItem}>Reputation</div>
+            <div className='item' id="Reliability" onClick={onClickItem}>Reliability</div>
+            <div className='item' id="Value" onClick={onClickItem}>Value</div>
         </div>
         <button><Link to="/criteria"><h1>Next</h1></Link></button>
       </div>
