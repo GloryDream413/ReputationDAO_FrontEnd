@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
 
 export const Collectemail = () => {
-  const { walletAddress } = useContext(UserContext);
+  const { walletAddress, SetWalletAddress } = useContext(UserContext);
   return (
     <div className="mainsection">
       <div className='menu'>
