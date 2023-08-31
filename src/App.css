@@ -25,6 +25,10 @@ body {
   border-radius: 5px;
 }
 
+.mainsection .menu a {
+  text-decoration: none;
+}
+
 .mainsection .menu img {
   margin-top: 30px;
   margin-left: 10%;
