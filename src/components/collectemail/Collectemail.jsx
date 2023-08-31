@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './collectemail.css';
 import { useNavigate } from 'react-router-dom';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
@@ -26,7 +26,7 @@ export const Collectemail = () => {
     connectWalletPressed();
   })
 
-  const [email, SetEmail] = useState('');
+  const { email, SetEmail } = useContext(UserContext);
   const onEmailChange = (event) => {
     SetEmail(event.target.value);
   };

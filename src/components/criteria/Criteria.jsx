@@ -17,10 +17,17 @@ import confirm_cross from '../../assets/confirm_cross.png';
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
 import { connectWallet } from '../../core/interact';
+import { toast } from 'react-toastify';
 
 export const Criteria = () => {
   const navigate = useNavigate();
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
+  const { email } = useContext(UserContext);
+  const { principle1 } = useContext(UserContext);
+  const { principle2 } = useContext(UserContext);
+  const { principle3 } = useContext(UserContext);
+  const { principle4 } = useContext(UserContext);
+  const { principle5 } = useContext(UserContext);
   const [ item1Status, SetItem1Status ] = useState(0);
   const [ item2Status, SetItem2Status ] = useState(0);
   const [ item3Status, SetItem3Status ] = useState(0);
@@ -102,7 +109,14 @@ export const Criteria = () => {
     SetItem8Status(2);
   }
 
+  const isVote = ["", "Yes", "No"];
+
   const onSubmit = async () => {
+    if(!item1Status || !item2Status || !item3Status || !item4Status || !item5Status || !item6Status || !item7Status || !item8Status)
+    {
+      toast.error("Please check all items.");
+      return;
+    }
     try {
       const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
       const account = accounts[0];
@@ -115,8 +129,24 @@ export const Criteria = () => {
   
       console.log("Message:", message);
       console.log("Signature:", signature);
-      navigate("/result");
+      const data = {
+        address: walletAddress,
+        email: email,
+        principles: [principle1, principle2, principle3, principle4, principle5],
+        criteria: {
+          "Commercialise reputation and verification services.": isVote[item1Status],
+          "Provide liquidity to other protocols.": isVote[item2Status],
+          "Utilise treasury funds in yield and staking.": isVote[item3Status],
+          "Fund bad actor detection and bounty hunting.": isVote[item4Status],
+          "Fund development of RDAO ecosystem.": isVote[item5Status],
+          "Actively manage DAO as an investment fund.": isVote[item6Status],
+          "Invest in early stage protocols.": isVote[item7Status],
+          "Invest in NFT’s.": isVote[item8Status]
+        }
+      }
 
+      console.log(data);
+      navigate("/result");
     } catch (error) {
       console.error("Error signing message:", error);
     }

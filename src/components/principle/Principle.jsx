@@ -18,6 +18,11 @@ import { toast } from 'react-toastify';
 export const Principle = () => {
   const navigate = useNavigate();
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
+  const { SetPrinciple1 } = useContext(UserContext);
+  const { SetPrinciple2 } = useContext(UserContext);
+  const { SetPrinciple3 } = useContext(UserContext);
+  const { SetPrinciple4 } = useContext(UserContext);
+  const { SetPrinciple5 } = useContext(UserContext);
   const [ isWrittenId, SetWrittenId] = useState(0);
   useEffect(()=>{
     const connectWalletPressed = async () => {
@@ -35,6 +40,26 @@ export const Principle = () => {
     else
     {
         document.getElementById(isWrittenId+1).textContent = event.target.id;
+        if(isWrittenId === 0)
+        {
+            SetPrinciple1(event.target.id);
+        }
+        else if(isWrittenId === 1)
+        {
+            SetPrinciple2(event.target.id);
+        }
+        else if(isWrittenId === 2)
+        {
+            SetPrinciple3(event.target.id);
+        }
+        else if(isWrittenId === 3)
+        {
+            SetPrinciple4(event.target.id);
+        }
+        else if(isWrittenId === 4)
+        {
+            SetPrinciple5(event.target.id);
+        }
         SetWrittenId(isWrittenId+1);
     }
   }
