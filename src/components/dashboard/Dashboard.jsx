@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './dashboard.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import genesis_icon from '../../assets/genesis_icon.png'
@@ -7,10 +8,10 @@ import dao_icon from '../../assets/dao_icon.png'
 import { connectWallet } from '../../core/interact';
 import { UserContext } from "../../App";
 import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
 
 export const Dashboard = () => {
-  const { walletAddress, SetWalletAddress } = useContext(UserContext);
+  const navigate = useNavigate();
+  const { SetWalletAddress } = useContext(UserContext);
   const connectWalletPressed = async () => {
     const walletResponse = await connectWallet();
     if(walletResponse.address === '')
@@ -21,6 +22,7 @@ export const Dashboard = () => {
     else
     {
       SetWalletAddress(walletResponse.address);
+      navigate("/collectemail");
     }
   };
 
@@ -28,7 +30,7 @@ export const Dashboard = () => {
     <div className="mainsection">
       <div className="walletconnect">
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-        <Link to="/collectemail"><button onClick={connectWalletPressed}><h1>Connect Wallet</h1></button></Link>
+        <button onClick={connectWalletPressed}><h1>Connect Wallet</h1></button>
         <div className='icons'>
           <img src={airdrop_icon} alt="airdrop"/>
           <img src={dao_icon} alt="dao"/>

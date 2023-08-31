@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './criteria.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -12,8 +12,10 @@ import connected_status_icon from '../../assets/connected_status.png'
 import general_check from '../../assets/general_check.png';
 import general_cross from '../../assets/general_cross.png';
 import { Link } from 'react-router-dom';
+import { UserContext } from "../../App";
 
 export const Criteria = () => {
+  const { walletAddress } = useContext(UserContext);
   return (
     <div className="mainsection">
       <div className='menu'>
@@ -40,7 +42,7 @@ export const Criteria = () => {
         <div className='walletinfo'>
             <div className='walletaddress'>
                 <img src={connected_status_icon} alt="connected_status_icon"/>
-                <h1>0x...43Js</h1>
+                <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
             </div>
         </div>
         <div className='mainlogo'>

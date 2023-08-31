@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import './collectemail.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -40,7 +40,7 @@ export const Collectemail = () => {
         <div className='walletinfo'>
             <div className='walletaddress'>
                 <img src={connected_status_icon} alt="connected_status_icon"/>
-                <h1>{walletAddress}</h1>
+                <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
             </div>
         </div>
         <div className='mainlogo'>

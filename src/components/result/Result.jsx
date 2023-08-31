@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './result.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -12,8 +12,10 @@ import connected_status_icon from '../../assets/connected_status.png'
 import confirm_check from '../../assets/confirm_check.png';
 import confirm_cross from '../../assets/confirm_cross.png';
 import clock_icon from '../../assets/clock_icon.png';
+import { UserContext } from "../../App";
 
 export const Result = () => {
+  const { walletAddress } = useContext(UserContext);
   return (
     <div className="mainsection">
       <div className='menu'>
@@ -40,7 +42,7 @@ export const Result = () => {
         <div className='walletinfo'>
             <div className='walletaddress'>
                 <img src={connected_status_icon} alt="connected_status_icon"/>
-                <h1>0x...43Js</h1>
+                <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
             </div>
         </div>
         <div className='mainlogo'>
