@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './criteria.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -18,6 +19,7 @@ import { UserContext } from "../../App";
 import { connectWallet } from '../../core/interact';
 
 export const Criteria = () => {
+  const navigate = useNavigate();
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
   const [ item1Status, SetItem1Status ] = useState(0);
   const [ item2Status, SetItem2Status ] = useState(0);
@@ -98,6 +100,26 @@ export const Criteria = () => {
 
   const onCrossItem8 = () => {
     SetItem8Status(2);
+  }
+
+  const onSubmit = async () => {
+    try {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+      const account = accounts[0];
+  
+      const message = "Hello, MetaMask!";
+      const signature = await window.ethereum.request({
+        method: 'personal_sign',
+        params: [message, account],
+      });
+  
+      console.log("Message:", message);
+      console.log("Signature:", signature);
+      navigate("/result");
+
+    } catch (error) {
+      console.error("Error signing message:", error);
+    }
   }
 
   return (
@@ -288,7 +310,7 @@ export const Criteria = () => {
             </div>
           </div>
         </div>
-        <button><Link to="/result"><h1>Submit</h1></Link></button>
+        <button onClick={onSubmit}><h1>Submit</h1></button>
       </div>
     </div>
   );
