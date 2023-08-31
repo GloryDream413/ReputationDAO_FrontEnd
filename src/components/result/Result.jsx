@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './result.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -13,9 +13,17 @@ import confirm_check from '../../assets/confirm_check.png';
 import confirm_cross from '../../assets/confirm_cross.png';
 import clock_icon from '../../assets/clock_icon.png';
 import { UserContext } from "../../App";
+import { connectWallet } from '../../core/interact';
 
 export const Result = () => {
-  const { walletAddress } = useContext(UserContext);
+  const { walletAddress, SetWalletAddress } = useContext(UserContext);
+  useEffect(()=>{
+    const connectWalletPressed = async () => {
+      const walletResponse = await connectWallet();
+      SetWalletAddress(walletResponse.address);
+    };
+    connectWalletPressed();
+  })
   return (
     <div className="mainsection">
       <div className='menu'>
