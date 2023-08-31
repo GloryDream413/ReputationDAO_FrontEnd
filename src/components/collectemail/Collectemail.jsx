@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import './collectemail.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -10,8 +10,10 @@ import twitter_icon from '../../assets/twitter_icon.png'
 import telegram_icon from '../../assets/telegram_icon.png'
 import connected_status_icon from '../../assets/connected_status.png'
 import { Link } from 'react-router-dom';
+import { UserContext } from "../../App";
 
 export const Collectemail = () => {
+  const { walletAddress } = useContext(UserContext);
   return (
     <div className="mainsection">
       <div className='menu'>
@@ -38,7 +40,7 @@ export const Collectemail = () => {
         <div className='walletinfo'>
             <div className='walletaddress'>
                 <img src={connected_status_icon} alt="connected_status_icon"/>
-                <h1>0x...43Js</h1>
+                <h1>{walletAddress}</h1>
             </div>
         </div>
         <div className='mainlogo'>
