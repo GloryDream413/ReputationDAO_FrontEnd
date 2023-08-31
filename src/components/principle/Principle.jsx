@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import './principle.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -15,6 +16,7 @@ import { connectWallet } from '../../core/interact';
 import { toast } from 'react-toastify';
 
 export const Principle = () => {
+  const navigate = useNavigate();
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
   const [ isWrittenId, SetWrittenId] = useState(0);
   useEffect(()=>{
@@ -45,7 +47,7 @@ export const Principle = () => {
     }
     else
     {
-        
+        navigate("/criteria");
     }
   }
 
