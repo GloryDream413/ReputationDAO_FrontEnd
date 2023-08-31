@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './principle.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -12,9 +12,11 @@ import connected_status_icon from '../../assets/connected_status.png'
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
 import { connectWallet } from '../../core/interact';
+import { toast } from 'react-toastify';
 
 export const Principle = () => {
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
+  const [ isWrittenId, SetWrittenId] = useState(0);
   useEffect(()=>{
     const connectWalletPressed = async () => {
       const walletResponse = await connectWallet();
@@ -24,7 +26,27 @@ export const Principle = () => {
   })
 
   const onClickItem = (event) => {
-    
+    if(isWrittenId === 5)
+    {
+        return;
+    }
+    else
+    {
+        document.getElementById(isWrittenId+1).textContent = event.target.id;
+        SetWrittenId(isWrittenId+1);
+    }
+  }
+
+  const onSavingPrinciple = () => {
+    if(isWrittenId < 5)
+    {
+        toast.error('Please select 5 items.');
+        return;
+    }
+    else
+    {
+        
+    }
   }
 
   return (
@@ -75,23 +97,23 @@ export const Principle = () => {
             <div className='userselectboard'>
                 <div className='first'>
                     <h1>1.</h1>
-                    <label></label>
+                    <label id="1"></label>
                 </div>
                 <div className='second'>
                     <h1>2.</h1>
-                    <label></label>
+                    <label id="2"></label>
                 </div>
                 <div className='third'>
                     <h1>3.</h1>
-                    <label></label>
+                    <label id="3"></label>
                 </div>
                 <div className='fourth'>
                     <h1>4.</h1>
-                    <label></label>
+                    <label id="4"></label>
                 </div>
                 <div className='fifth'>
                     <h1>5.</h1>
-                    <label></label>
+                    <label id="5"></label>
                 </div>
             </div>
         </div>
@@ -111,7 +133,7 @@ export const Principle = () => {
             <div className='item' id="Reliability" onClick={onClickItem}>Reliability</div>
             <div className='item' id="Value" onClick={onClickItem}>Value</div>
         </div>
-        <button><Link to="/criteria"><h1>Next</h1></Link></button>
+        <button onClick={onSavingPrinciple}><h1>Next</h1></button>
       </div>
     </div>
   );
