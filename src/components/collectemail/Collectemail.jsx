@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './collectemail.css';
+import { useNavigate } from 'react-router-dom';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
 import genesis_icon from '../../assets/genesis_icon.png'
@@ -12,8 +13,10 @@ import connected_status_icon from '../../assets/connected_status.png'
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
 import { connectWallet } from '../../core/interact';
+import { toast } from 'react-toastify';
 
 export const Collectemail = () => {
+  const navigate = useNavigate();
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
   useEffect(()=>{
     const connectWalletPressed = async () => {
@@ -27,6 +30,19 @@ export const Collectemail = () => {
   const onEmailChange = (event) => {
     SetEmail(event.target.value);
   };
+
+  const onSavingEmail = () => {
+    if(email === '')
+    {
+      toast.error('Please input email');
+      return;
+    }
+    else
+    {
+      navigate("/principle");
+    }
+  }
+
   return (
     <div className="mainsection">
       <div className='menu'>
@@ -77,7 +93,7 @@ export const Collectemail = () => {
               value={email}
               onChange={onEmailChange} />
         </div>
-        <button><Link to="/principle"><h1>Next</h1></Link></button>
+        <button onClick={onSavingEmail}><h1>Next</h1></button>
       </div>
     </div>
   );
