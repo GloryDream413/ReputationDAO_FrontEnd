@@ -6,30 +6,31 @@
   margin-bottom: 3px;
 }
 
-.options .option {
+.mainsection .content .options .option {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  height: 35px;
+  height: 50px;
   flex-shrink: 0;
   border-radius: 10px;
   border: 1px solid #68C0FF;
   background: #FFF;
+  margin-top: 5px;
 }
 
-.option h1 {
+.mainsection .content .options .option h1 {
   margin-left: 10px;
   color: #000;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
-.option .checkbuttons {
+.mainsection .content .options .option .checkbuttons {
   margin-right: 5px;
   display: flex;
   flex-direction: row;
@@ -37,7 +38,7 @@
   align-items: center;
 }
 
-.checkbuttons img {
+.mainsection .content .options .option .checkbuttons img {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
