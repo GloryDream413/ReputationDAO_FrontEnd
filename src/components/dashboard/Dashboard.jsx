@@ -27,7 +27,7 @@ export const Dashboard = () => {
   };
 
   return (
-    <div className="mainsection">
+    <div className="mainsection1">
       <div className="walletconnect">
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
         <button onClick={connectWalletPressed}><h1>Connect Wallet</h1></button>

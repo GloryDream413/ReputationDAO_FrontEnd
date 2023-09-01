@@ -1,46 +1,53 @@
-.mainsection {
+.mainsection1 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.mainsection .walletconnect {
+.mainsection1 .walletconnect {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 150px;
-  margin-left: 30%;
-  width: 40%;
+  width: 600px;
+  height: 600px;
   background: white;
   border-radius: 10px;
 }
 
-.mainsection .walletconnect img {
+.mainsection1 .walletconnect img {
   margin-top: 30px;
   margin-left: 15%;
   width: 70%;
   border-radius: 7px;
 }
 
-.mainsection .walletconnect button {
+.mainsection1 .walletconnect button {
+  width: 303.27px;
+  height: 82px;
+  flex-shrink: 0;
   border-radius: 13px;
   background: #222;
   margin-top: 30px;
   margin-left: 25%;
-  width: 50%;
   box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
 }
 
-.mainsection .walletconnect h1 {
+.mainsection1 .walletconnect h1 {
+  width: 277.238px;
+  height: 49.46px;
+  flex-shrink: 0;
   color: #FFF;
   text-align: center;
   font-family: Inter;
-  font-size: 30;
+  font-size: 36.444px;
   font-style: normal;
   font-weight: 600;
   line-height: 61.023%;
 }
 
-.mainsection .walletconnect .icons {
+.mainsection1 .walletconnect .icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
