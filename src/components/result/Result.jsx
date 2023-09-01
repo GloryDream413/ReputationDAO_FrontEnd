@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './result.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
 import mainlogo from '../../assets/mainlogo.png'
@@ -18,6 +18,7 @@ import { connectWallet } from '../../core/interact';
 
 export const Result = () => {
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
+  const [ seconds, setSeconds ] = useState(30 * 24 * 60 * 60);
   useEffect(()=>{
     const connectWalletPressed = async () => {
       const walletResponse = await connectWallet();
@@ -25,6 +26,20 @@ export const Result = () => {
     };
     connectWalletPressed();
   })
+
+  useEffect(() => {
+    //Implementing the setInterval method
+    const interval = setInterval(() => {
+      if(seconds !== 0)
+      {
+        setSeconds(seconds - 1);
+      }
+    }, 1000);
+
+    //Clearing the interval
+    return () => clearInterval(interval);
+  }, [seconds]);
+
   return (
     <div className="mainsection2">
       <div className='menu'>
@@ -75,7 +90,7 @@ export const Result = () => {
         <div className='timedialog'>
           <div className='timedialogdisplay'>
             <img src={clock_icon} alt="clock_icon"/>
-            <h1>24D, 2h, 15m, 11s</h1>
+            <h1>{parseInt(seconds/(24*60*60))}D, {parseInt((seconds - parseInt(seconds/(24*60*60))*(24*60*60))/(60*60))}h, {parseInt((seconds - parseInt(seconds/(24*60*60))*24*60*60 - parseInt((seconds - parseInt(seconds/(24*60*60))*(24*60*60))/(60*60))* 60*60)/60)}m, {seconds - parseInt(seconds/(24*60*60))*(24*60*60) - parseInt((seconds - parseInt(seconds/(24*60*60))*(24*60*60))/(60*60))*(60*60) - parseInt((seconds - parseInt(seconds/(24*60*60))*24*60*60 - parseInt((seconds - parseInt(seconds/(24*60*60))*(24*60*60))/(60*60))* 60*60)/60)*60}s</h1>
           </div>
         </div>
         <div className='userselect'>
