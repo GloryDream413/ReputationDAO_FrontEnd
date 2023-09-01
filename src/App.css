@@ -1,12 +1,14 @@
-body {
+body, html {
   background: linear-gradient(180deg, #FFB366 0%, #FFB8C5 100%);
   position: relative;
+  margin: 0;
 }
 
 .mainsection {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  height: 100vh;
 }
 
 .mainsection .menu {
@@ -15,7 +17,6 @@ body {
   justify-content: space-between;
   background: white;
   width: 20%;
-  height: 100vh;
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
