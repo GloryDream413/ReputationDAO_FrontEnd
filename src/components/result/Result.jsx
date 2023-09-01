@@ -26,7 +26,7 @@ export const Result = () => {
     connectWalletPressed();
   })
   return (
-    <div className="mainsection">
+    <div className="mainsection2">
       <div className='menu'>
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
         <Link to="/collectemail">

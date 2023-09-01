@@ -1,11 +1,246 @@
-.mainsection .content .title {
+body, html {
+  background: linear-gradient(180deg, #FFB366 0%, #FFB8C5 100%);
+  position: relative;
+  margin: 0;
+}
+
+.mainsection2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  height: 100vh;
+}
+
+.mainsection2 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  width: 20%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.mainsection2 .menu a {
+  text-decoration: none;
+}
+
+.mainsection2 .menu img {
+  margin-top: 10px;
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 7px;
+}
+
+.mainsection2 .menu .genesis_icon {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.mainsection2 .menu .genesis_icon img {
+  width: 20px;
+  height: 20px;
+  margin-left: 13px;
+  margin-top: 0px;
+}
+
+.mainsection2 .menu .genesis_icon h1 {
+  display: flex;
+  width: 151px;
+  height: 49px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.mainsection2 .menu .dao_icon {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.mainsection2 .menu .dao_icon h1 {
+  display: flex;
+  width: 151px;
+  height: 49px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.mainsection2 .menu .dao_icon img {
+  width: 20px;
+  height: 20px;
+  margin-left: 13px;
+  margin-top: 0px;
+}
+
+.mainsection2 .menu .airdrop_icon {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.mainsection2 .menu .airdrop_icon img {
+  width: 20px;
+  height: 20px;
+  margin-left: 13px;
+  margin-top: 0px;
+}
+
+.mainsection2 .menu .airdrop_icon h1 {
+  display: flex;
+  width: 151px;
+  height: 49px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.mainsection2 .menu .social_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100%;
+  margin-left: 35%;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.mainsection2 .menu .social_icon img {
+  margin-right: 20px;
+}
+
+.mainsection2 .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 80%;
+  position: relative;
+}
+
+.mainsection2 .content .walletinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.mainsection2 .content .walletinfo .walletaddress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 143.27px;
+  height: 38.738px;
+  flex-shrink: 0;
+  border-radius: 6.149px;
+  background: #FFF;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
+}
+
+.mainsection2 .content .walletinfo .walletaddress img {
+  width: 10px;
+  height: 10px;
+}
+
+.walletaddress h1 {
+  margin-left: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainsection2 .content .mainlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+.mainsection2 .content .mainlogo img {
+  width: 150px;
+  height: 123.913px;
+}
+
+.mainsection2 .content .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainsection2 .content .title h1 {
+  width: 50%;
+  color: #000;
+  font-family: Inter;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 0px;
+}
+
+.mainsection2 .content .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 90px;
+}
+
+.mainsection2 .content .description h1 {
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainsection2 .content .title {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.mainsection .content .title h1 {
+.mainsection2 .content .title h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,7 +252,7 @@
   line-height: normal;
 }
 
-.mainsection .content .description {
+.mainsection2 .content .description {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,7 +270,7 @@
   line-height: normal;
 }
 
-.mainsection .content .options {
+.mainsection2 .content .options {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,7 +315,7 @@
   flex-shrink: 0;
 }
 
-.mainsection .content button {
+.mainsection2 .content button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,7 +331,7 @@
   box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
 }
 
-.mainsection .content button h1 {
+.mainsection2 .content button h1 {
   color: #FFF;
   text-align: center;
   font-family: Inter;
@@ -106,7 +341,7 @@
   line-height: normal;
 }
 
-.mainsection .content .timelabel {
+.mainsection2 .content .timelabel {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -129,7 +364,7 @@
   line-height: normal;
 }
 
-.mainsection .content .timedialog {
+.mainsection2 .content .timedialog {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -172,7 +407,7 @@
   line-height: normal;
 }
 
-.mainsection .content .userselect {
+.mainsection2 .content .userselect {
   display: flex;
   flex-direction: row;
   justify-content: center;
