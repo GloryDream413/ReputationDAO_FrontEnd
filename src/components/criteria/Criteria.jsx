@@ -16,8 +16,9 @@ import general_cross from '../../assets/general_cross.png';
 import confirm_cross from '../../assets/confirm_cross.png';
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
-import { connectWallet } from '../../core/interact';
+import { connectWallet, signMessageHash } from '../../core/interact';
 import { toast } from 'react-toastify';
+import * as env from "../../env"
 import axios from 'axios';
 
 export const Criteria = () => {
@@ -145,20 +146,29 @@ export const Criteria = () => {
         params: [message, account],
       });
 
-      // const response = await axios.post('http://65.108.142.188:3501/api/genesis/save_proposal',
-      //   {
-      //       data: data,
-      //       signData: signature
-      //   },
-      //   {
-      //       headers: {
-      //         'Content-Type': 'application/json'
-      //       }
-      //   }
-      // );
-      // console.log(response);
+      const response = await axios.post(`${env.API_URL}/genesis/save_proposal`,
+        {
+            data: data,
+            signData: signature
+        },
+        {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+        }
+      );
+      console.log(response);
+      if (response.status === 200) {
+        const rlt  = response.data
+        if (rlt.success) {
+          navigate("/result");
+        } else {
+          console.error("Sign failed:");
+        }
+      } else {
+        console.error (`API ${env.API_URL} call failed`)
+      }
       
-      navigate("/result");
     } catch (error) {
       console.error("Error signing message:", error);
     }
