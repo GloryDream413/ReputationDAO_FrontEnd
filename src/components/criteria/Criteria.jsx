@@ -145,19 +145,19 @@ export const Criteria = () => {
         params: [message, account],
       });
 
-      const response = await axios.post('http://65.108.142.188:3501/api/genesis/save_proposal',
-        {
-            data: data,
-            signData: signature
-        },
-        {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-        }
-      );
+      // const response = await axios.post('http://65.108.142.188:3501/api/genesis/save_proposal',
+      //   {
+      //       data: data,
+      //       signData: signature
+      //   },
+      //   {
+      //       headers: {
+      //         'Content-Type': 'application/json'
+      //       }
+      //   }
+      // );
+      // console.log(response);
       
-      console.log(response);
       navigate("/result");
     } catch (error) {
       console.error("Error signing message:", error);

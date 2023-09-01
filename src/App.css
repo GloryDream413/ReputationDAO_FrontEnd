@@ -12,7 +12,7 @@ body {
 .mainsection .menu {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   background: white;
   width: 20%;
   height: 100vh;
@@ -38,26 +38,31 @@ body {
   flex-direction: row;
   width: 80%;
   margin-left: 10%;
-  margin-top: 50px;
+  margin-top: 100px;
   align-items: center;
 }
 
 .mainsection .menu .genesis_icon img {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
 .mainsection .menu .genesis_icon h1 {
-  margin-left: 10px;
-  width: 20%;
+  display: flex;
+  width: 151px;
+  height: 49px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-left: 20px;
 }
 
 .mainsection .menu .dao_icon {
@@ -69,18 +74,24 @@ body {
 }
 
 .mainsection .menu .dao_icon h1 {
-  margin-left: 10px;
+  display: flex;
+  width: 151px;
+  height: 49px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
   color: #888;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-left: 20px;
 }
 
 .mainsection .menu .dao_icon img {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
@@ -94,20 +105,26 @@ body {
 }
 
 .mainsection .menu .airdrop_icon img {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
 .mainsection .menu .airdrop_icon h1 {
-  margin-left: 10px;
+  display: flex;
+  width: 151px;
+  height: 49px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
   color: #888;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal; 
+  line-height: normal;
+  margin-left: 20px;
 }
 
 .mainsection .menu .social_icon {
@@ -128,7 +145,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  width: 75%;
+  width: 80%;
   position: relative;
 }
 
