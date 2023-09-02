@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Inter-SemiBold.ttf");
+}
+
 body, html {
   background: linear-gradient(180deg, #FFB366 0%, #FFB8C5 100%);
   position: relative;
