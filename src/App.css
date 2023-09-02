@@ -28,18 +28,25 @@ body, html {
 }
 
 .mainsection .menu img {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 10%;
   width: 80%;
 }
 
-.mainsection .menu .menuitems {
+.mainsection .menu .logoitem {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  justify-content: space-between;
 }
 
-.mainsection .menu .menuitems .genesis_icon {
+.mainsection .menu .logoitem .menuitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.mainsection .menu .logoitem .menuitems .genesis_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -47,26 +54,26 @@ body, html {
   align-items: center;
 }
 
-.mainsection .menu .menuitems .genesis_icon img {
+.mainsection .menu .logoitem .menuitems .genesis_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection .menu .menuitems .genesis_icon h1 {
+.mainsection .menu .logoitem .menuitems .genesis_icon h1 {
   width: 150px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-left: 20px;
 }
 
-.mainsection .menu .menuitems .dao_icon {
+.mainsection .menu .logoitem .menuitems .dao_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -74,26 +81,26 @@ body, html {
   align-items: center;
 }
 
-.mainsection .menu .menuitems .dao_icon h1 {
+.mainsection .menu .logoitem .menuitems .dao_icon h1 {
   width: 150px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-left: 20px;
 }
 
-.mainsection .menu .menuitems .dao_icon img {
+.mainsection .menu .logoitem .menuitems .dao_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection .menu .menuitems .airdrop_icon {
+.mainsection .menu .logoitem .menuitems .airdrop_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -101,19 +108,19 @@ body, html {
   align-items: center;
 }
 
-.mainsection .menu .menuitems .airdrop_icon img {
+.mainsection .menu .logoitem .menuitems .airdrop_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection .menu .menuitems .airdrop_icon h1 {
+.mainsection .menu .logoitem .menuitems .airdrop_icon h1 {
   width: 150px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
