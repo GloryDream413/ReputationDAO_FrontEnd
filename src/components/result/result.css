@@ -34,28 +34,29 @@ body, html {
   border-radius: 7px;
 }
 
-.mainsection2 .menu .genesis_icon {
+.mainsection2 .menu .menuitems {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.mainsection2 .menu .menuitems .genesis_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
   margin-left: 10%;
-  margin-top: 100px;
   align-items: center;
 }
 
-.mainsection2 .menu .genesis_icon img {
+.mainsection2 .menu .menuitems .genesis_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection2 .menu .genesis_icon h1 {
-  display: flex;
-  width: 151px;
-  height: 49px;
-  flex-direction: column;
-  justify-content: center;
+.mainsection2 .menu .menuitems .genesis_icon h1 {
+  width: 150px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
@@ -66,7 +67,7 @@ body, html {
   margin-left: 20px;
 }
 
-.mainsection2 .menu .dao_icon {
+.mainsection2 .menu .menuitems .dao_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -74,14 +75,10 @@ body, html {
   align-items: center;
 }
 
-.mainsection2 .menu .dao_icon h1 {
-  display: flex;
-  width: 151px;
-  height: 49px;
-  flex-direction: column;
-  justify-content: center;
+.mainsection2 .menu .menuitems .dao_icon h1 {
+  width: 150px;
   flex-shrink: 0;
-  color: #888;
+  color: #000;
   font-family: Inter;
   font-size: 30px;
   font-style: normal;
@@ -90,14 +87,14 @@ body, html {
   margin-left: 20px;
 }
 
-.mainsection2 .menu .dao_icon img {
+.mainsection2 .menu .menuitems .dao_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection2 .menu .airdrop_icon {
+.mainsection2 .menu .menuitems .airdrop_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -105,21 +102,17 @@ body, html {
   align-items: center;
 }
 
-.mainsection2 .menu .airdrop_icon img {
+.mainsection2 .menu .menuitems .airdrop_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection2 .menu .airdrop_icon h1 {
-  display: flex;
-  width: 151px;
-  height: 49px;
-  flex-direction: column;
-  justify-content: center;
+.mainsection2 .menu .menuitems .airdrop_icon h1 {
+  width: 150px;
   flex-shrink: 0;
-  color: #888;
+  color: #000;
   font-family: Inter;
   font-size: 30px;
   font-style: normal;

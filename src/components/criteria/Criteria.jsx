@@ -178,24 +178,26 @@ export const Criteria = () => {
     <div className="mainsection">
       <div className='menu'>
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-        <Link to="/collectemail">
-        <div className='genesis_icon'>
-            <img src={genesis_icon} alt="genesis_icon"/>
-            <h1>Genesis</h1>
+        <div className='menuitems'>
+          <Link to="/collectemail">
+          <div className='genesis_icon'>
+              <img src={genesis_icon} alt="genesis_icon"/>
+              <h1>Genesis</h1>
+          </div>
+          </Link>
+          <Link to="/coming">
+          <div className='dao_icon'>
+              <img src={dao_icon} alt="dao_icon"/>
+              <h1>DAO</h1>
+          </div>
+          </Link>
+          <Link to="/coming">
+          <div className='airdrop_icon'>
+              <img src={airdrop_icon} alt="airdrop_icon"/>
+              <h1>Airdrop</h1>
+          </div>
+          </Link>
         </div>
-        </Link>
-        <Link to="/coming">
-        <div className='dao_icon'>
-            <img src={dao_icon} alt="dao_icon"/>
-            <h1>DAO</h1>
-        </div>
-        </Link>
-        <Link to="/coming">
-        <div className='airdrop_icon'>
-            <img src={airdrop_icon} alt="airdrop_icon"/>
-            <h1>Airdrop</h1>
-        </div>
-        </Link>
         <div className='social_icon'>
             <img src={vector_icon} alt="vector_icon"/>
             <img src={twitter_icon} alt="twitter_icon"/>
