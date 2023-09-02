@@ -147,12 +147,11 @@
 
 .mainsection .content .items1 {
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 120px;
   margin-right: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -161,6 +160,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
   width: 120px;
   height: 32.429px;
   flex-shrink: 0;
@@ -171,12 +171,11 @@
 
 .mainsection .content .items2 {
   margin-top: 10px;
-  margin-left: 100px;
+  margin-left: 120px;
   margin-right: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -185,6 +184,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
   width: 120px;
   height: 32.429px;
   flex-shrink: 0;
