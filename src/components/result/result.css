@@ -28,19 +28,25 @@ body, html {
 }
 
 .mainsection2 .menu img {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 10%;
   width: 80%;
-  border-radius: 7px;
 }
 
-.mainsection2 .menu .menuitems {
+.mainsection2 .menu .logoitem {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  justify-content: space-between;
 }
 
-.mainsection2 .menu .menuitems .genesis_icon {
+.mainsection2 .menu .logoitem .menuitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.mainsection2 .menu .logoitem .menuitems .genesis_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -48,26 +54,26 @@ body, html {
   align-items: center;
 }
 
-.mainsection2 .menu .menuitems .genesis_icon img {
+.mainsection2 .menu .logoitem .menuitems .genesis_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection2 .menu .menuitems .genesis_icon h1 {
+.mainsection2 .menu .logoitem .menuitems .genesis_icon h1 {
   width: 150px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-left: 20px;
 }
 
-.mainsection2 .menu .menuitems .dao_icon {
+.mainsection2 .menu .logoitem .menuitems .dao_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -75,26 +81,26 @@ body, html {
   align-items: center;
 }
 
-.mainsection2 .menu .menuitems .dao_icon h1 {
+.mainsection2 .menu .logoitem .menuitems .dao_icon h1 {
   width: 150px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-left: 20px;
 }
 
-.mainsection2 .menu .menuitems .dao_icon img {
+.mainsection2 .menu .logoitem .menuitems .dao_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection2 .menu .menuitems .airdrop_icon {
+.mainsection2 .menu .logoitem .menuitems .airdrop_icon {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -102,19 +108,19 @@ body, html {
   align-items: center;
 }
 
-.mainsection2 .menu .menuitems .airdrop_icon img {
+.mainsection2 .menu .logoitem .menuitems .airdrop_icon img {
   width: 20px;
   height: 20px;
   margin-left: 13px;
   margin-top: 0px;
 }
 
-.mainsection2 .menu .menuitems .airdrop_icon h1 {
+.mainsection2 .menu .logoitem .menuitems .airdrop_icon h1 {
   width: 150px;
   flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
