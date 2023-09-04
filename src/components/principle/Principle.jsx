@@ -32,6 +32,14 @@ export const Principle = () => {
   })
 
   const onClickItem = (event) => {
+    for(let j=1;j<=5;j++)
+    {
+      if(document.getElementById(j).textContent === event.target.id)
+      {
+        return;
+      }
+    }
+
     for(let i=1;i<=5;i++)
     {
         if(document.getElementById(i).textContent === '')
