@@ -23,7 +23,6 @@ export const Principle = () => {
   const { SetPrinciple3 } = useContext(UserContext);
   const { SetPrinciple4 } = useContext(UserContext);
   const { SetPrinciple5 } = useContext(UserContext);
-  const [ isWrittenId, SetWrittenId] = useState(0);
   useEffect(()=>{
     const connectWalletPressed = async () => {
       const walletResponse = await connectWallet();
@@ -33,47 +32,46 @@ export const Principle = () => {
   })
 
   const onClickItem = (event) => {
-    if(isWrittenId === 5)
+    for(let i=1;i<=5;i++)
     {
-        return;
-    }
-    else
-    {
-        document.getElementById(isWrittenId+1).textContent = event.target.id;
-        if(isWrittenId === 0)
+        if(document.getElementById(i).textContent === '')
         {
-            SetPrinciple1(event.target.id);
+            document.getElementById(i).textContent = event.target.id;
+            return;
         }
-        else if(isWrittenId === 1)
-        {
-            SetPrinciple2(event.target.id);
-        }
-        else if(isWrittenId === 2)
-        {
-            SetPrinciple3(event.target.id);
-        }
-        else if(isWrittenId === 3)
-        {
-            SetPrinciple4(event.target.id);
-        }
-        else if(isWrittenId === 4)
-        {
-            SetPrinciple5(event.target.id);
-        }
-        SetWrittenId(isWrittenId+1);
     }
   }
 
+  const onClickFirst = () => {
+    document.getElementById(1).textContent = "";
+  }
+
+  const onClickSecond = () => {
+    document.getElementById(2).textContent = "";
+  }
+
+  const onClickThird = () => {
+    document.getElementById(3).textContent = "";
+  }
+
+  const onClickFourth = () => {
+    document.getElementById(4).textContent = "";
+  }
+
+  const onClickFifth = () => {
+    document.getElementById(5).textContent = "";
+  }
+
   const onSavingPrinciple = () => {
-    if(isWrittenId < 5)
+    for(let i=1;i<=5;i++)
     {
-        toast.error('Please select 5 items.');
-        return;
+        if(document.getElementById(i).textContent === '')
+        {
+            toast.error('Please select 5 items.');
+            return;
+        }
     }
-    else
-    {
-        navigate("/criteria");
-    }
+    navigate("/criteria");
   }
 
   return (
@@ -125,23 +123,23 @@ export const Principle = () => {
                 <div className='userselectboard'>
                     <div className='first'>
                         <h1>1.</h1>
-                        <label id="1"></label>
+                        <label id="1" onClick={onClickFirst}></label>
                     </div>
                     <div className='second'>
                         <h1>2.</h1>
-                        <label id="2"></label>
+                        <label id="2" onClick={onClickSecond}></label>
                     </div>
                     <div className='third'>
                         <h1>3.</h1>
-                        <label id="3"></label>
+                        <label id="3" onClick={onClickThird}></label>
                     </div>
                     <div className='fourth'>
                         <h1>4.</h1>
-                        <label id="4"></label>
+                        <label id="4" onClick={onClickFourth}></label>
                     </div>
                     <div className='fifth'>
                         <h1>5.</h1>
-                        <label id="5"></label>
+                        <label id="5" onClick={onClickFifth}></label>
                     </div>
                 </div>
             </div>
