@@ -70,6 +70,26 @@ export const Principle = () => {
             toast.error('Please select 5 items.');
             return;
         }
+        if(i === 1)
+        {
+          SetPrinciple1(document.getElementById(i).textContent);
+        }
+        if(i === 2)
+        {
+          SetPrinciple2(document.getElementById(i).textContent);
+        }
+        if(i === 3)
+        {
+          SetPrinciple3(document.getElementById(i).textContent);
+        }
+        if(i === 4)
+        {
+          SetPrinciple4(document.getElementById(i).textContent);
+        }
+        if(i === 5)
+        {
+          SetPrinciple5(document.getElementById(i).textContent);
+        }
     }
     navigate("/criteria");
   }

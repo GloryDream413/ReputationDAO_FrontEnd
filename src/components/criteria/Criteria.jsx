@@ -160,6 +160,7 @@ export const Criteria = () => {
       console.log(response);
       if (response.status === 200) {
         const rlt  = response.data
+        console.log(rlt);
         if (rlt.success) {
           navigate("/result");
         } else {
