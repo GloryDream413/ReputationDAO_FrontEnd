@@ -172,6 +172,7 @@
   border-radius: 6.236px;
   border: 1.5px solid #8E66FF;
   background: #FFF;
+  cursor: pointer;
 }
 
 .mainsection .content .real-content .items2 {
@@ -196,4 +197,5 @@
   border-radius: 6.236px;
   border: 1.5px solid #8E66FF;
   background: #FFF;
+  cursor: pointer;
 }
