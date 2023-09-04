@@ -42,34 +42,3 @@
   height: 24px;
   flex-shrink: 0;
 }
-
-.mainsection .content .buttoncontent {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-}
-
-.mainsection .content .buttoncontent button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 13px;
-  background: #222;
-  width: 200px;
-  height: 80px;
-  flex-shrink: 0;
-  border: none;
-  box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
-}
-
-.mainsection .content .buttoncontent button h1 {
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 36.444px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
