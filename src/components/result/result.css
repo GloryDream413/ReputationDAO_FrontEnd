@@ -373,7 +373,7 @@ body, html {
   height: 88px;
   flex-shrink: 0;
   border-radius: 8.317px;
-  background: linear-gradient(180deg, #8E66FF 0%, #FFB8C5 100%);
+  background: linear-gradient(180deg, #8E66FF 0%, #FFB8C5 146.51%);
 }
 
 .mainsection2 .content .real-content .userselectboard .first {
@@ -399,6 +399,7 @@ body, html {
 
 .mainsection2 .content .real-content .userselectboard .first label {
   width: 100px;
+  margin-left: 7px;
 }
 
 .mainsection2 .content .real-content .userselectboard .second {
@@ -425,6 +426,7 @@ body, html {
 
 .mainsection2 .content .real-content .userselectboard .second label {
   width: 100px;
+  margin-left: 7px;
 }
 
 .mainsection2 .content .real-content .userselectboard .third {
@@ -451,6 +453,7 @@ body, html {
 
 .mainsection2 .content .real-content .userselectboard .third label {
   width: 100px;
+  margin-left: 7px;
 }
 
 .mainsection2 .content .real-content .userselectboard .fourth {
@@ -477,6 +480,7 @@ body, html {
 
 .mainsection2 .content .real-content .userselectboard .fourth label {
   width: 100px;
+  margin-left: 7px;
 }
 
 .mainsection2 .content .real-content .userselectboard .fifth {
@@ -503,4 +507,5 @@ body, html {
 
 .mainsection2 .content .real-content .userselectboard .fifth label {
   width: 100px;
+  margin-left: 7px;
 }
