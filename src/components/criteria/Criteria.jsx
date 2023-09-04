@@ -114,6 +114,7 @@ export const Criteria = () => {
   const isVote = ["", "Yes", "No"];
 
   const onSubmit = async () => {
+    document.getElementById('submit').disabled = true;
     if(!item1Status || !item2Status || !item3Status || !item4Status || !item5Status || !item6Status || !item7Status || !item8Status)
     {
       toast.error("Please check all items.");
@@ -146,6 +147,7 @@ export const Criteria = () => {
         params: [message, account],
       });
 
+      
       const response = await axios.post(`${env.API_URL}/genesis/save_proposal`,
         {
             data: data,
@@ -173,6 +175,7 @@ export const Criteria = () => {
     } catch (error) {
       console.error("Error signing message:", error);
     }
+    document.getElementById('submit').disabled = false;
   }
 
   return (
@@ -366,7 +369,7 @@ export const Criteria = () => {
           </div>
         </div>
         <div className='buttoncontent'>
-          <button onClick={onSubmit}><h1>Submit</h1></button>
+          <button id="submit" onClick={onSubmit}><h1>Submit</h1></button>
         </div>
       </div>
     </div>
