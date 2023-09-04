@@ -5,9 +5,9 @@ import mainlogo from '../../assets/mainlogo.png'
 import genesis_icon from '../../assets/genesis_icon.png'
 import airdrop_icon from '../../assets/airdrop_icon.png'
 import dao_icon from '../../assets/dao_icon.png'
-import vector_icon from '../../assets/vector_icon.png'
-import twitter_icon from '../../assets/twitter_icon.png'
-import telegram_icon from '../../assets/telegram_icon.png'
+import vector_icon from '../../assets/vector_icon.svg'
+import twitter_icon from '../../assets/twitter_icon.svg'
+import telegram_icon from '../../assets/telegram_icon.svg'
 import connected_status_icon from '../../assets/connected_status.png'
 import confirm_check from '../../assets/confirm_check.png';
 import confirm_cross from '../../assets/confirm_cross.png';

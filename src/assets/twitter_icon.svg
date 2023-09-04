@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>twitter_icon</title>
+	<defs>
+		<image  width="30" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAMAAABBJv+bAAAAAXNSR0IB2cksfwAAAEVQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3Orq9wAAABd0Uk5TYH9fAG8w/0BQcO8goL+Pz98QgJ+vkD9tfYW3AAABB0lEQVR4nG2T2xLDIAhETamYaC+xTfv/n1pAUOzEBzN6Mi6sawiLjgv4wdtX+kS0kRxdeWMlDJvhXDqNmdYLHwJwQ7wDPBCfRsuulHGlxQvgifhw9A2KoWQW5nmVPfrRTmLM8nuBpPIkxsuBWVjlK7wcVVyb8J1mpjnChFVYakIrwWH2IYu8tTRjFV5mOrAI23yCWXjT+QRr32ky3+FK1e9VPKon+MBmtZcf+NN63uSKtn8sbnEKosjHGUsovio85BVLpChbmo3D33ezvLnVstHlgznSoyLZiFJEw/wvH9mroOtW+aANDyckGylRAg7BHx8PaNkwD0Jr2FEtVEYMhR9QhGmk/rB+HYISLGJ+jD0AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="1"/>
+</svg>

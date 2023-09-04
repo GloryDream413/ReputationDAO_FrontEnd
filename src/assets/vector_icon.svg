@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 30" width="22" height="30">
+	<title>vector_icon</title>
+	<defs>
+		<image  width="22" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAeBAMAAADayfNlAAAAAXNSR0IB2cksfwAAACpQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChPOiAAAAA50Uk5TMO//fyAAz5/fUF+Pv0CRslbOAAAAdElEQVR4nGNgVAIBZZPQ0FCGJAi7whXIboKwi1qQ2BquCLZSCxJbwxXBVmqBsScbG1tB2Wrl5eXVUDYIaKCxxctBoBDMbg0FgQgwW+YMCBwiWj2yOLJ6HaApx6BskPpYKFvY2NjYHIt7yGcnwdlqDBxwtgAAaV5OqtruM58AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>
