@@ -164,16 +164,17 @@ export const Criteria = () => {
         const rlt  = response.data
         console.log(rlt);
         if (rlt.success) {
+          toast.success('Sign success');
           navigate("/result");
         } else {
-          console.error("Sign failed:");
+          toast.error('Sign failed:');
         }
       } else {
-        console.error (`API ${env.API_URL} call failed`)
+        toast.error('API ${env.API_URL} call failed');
       }
       
     } catch (error) {
-      console.error("Error signing message:", error);
+      toast.error('Error signing message:' + error);
     }
     document.getElementById('submit').disabled = false;
   }
