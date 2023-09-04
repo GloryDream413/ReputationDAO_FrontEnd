@@ -1,10 +1,10 @@
-.mainsection .content .userselect {
+.mainsection .content .real-content .userselect {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.userselect .userselectboard {
+.mainsection .content .real-content .userselect .userselectboard {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,7 +16,7 @@
   background: linear-gradient(180deg, #8E66FF 0%, #FFB8C5 100%);
 }
 
-.userselectboard .first {
+.mainsection .content .real-content .userselectboard .first {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -28,7 +28,7 @@
   background: #FFF;
 }
 
-.first h1 {
+.mainsection .content .real-content .userselectboard .first h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -37,37 +37,11 @@
   line-height: normal;
 }
 
-.first label {
+.mainsection .content .real-content .userselectboard .first label {
   width: 100px;
 }
 
-.userselectboard .second {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  width: 150px;
-  height: 43.247px;
-  flex-shrink: 0;
-  border-radius: 8.317px;
-  background: #FFF;
-}
-
-.second h1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 16.633px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.second label {
-  width: 100px;
-}
-
-.userselectboard .third {
+.mainsection .content .real-content .userselectboard .second {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,7 +54,7 @@
   background: #FFF;
 }
 
-.third h1 {
+.mainsection .content .real-content .userselectboard .second h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -89,11 +63,11 @@
   line-height: normal;
 }
 
-.third label {
+.mainsection .content .real-content .userselectboard .second label {
   width: 100px;
 }
 
-.userselectboard .fourth {
+.mainsection .content .real-content .userselectboard .third {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,7 +80,7 @@
   background: #FFF;
 }
 
-.fourth h1 {
+.mainsection .content .real-content .userselectboard .third h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -115,11 +89,11 @@
   line-height: normal;
 }
 
-.fourth label {
+.mainsection .content .real-content .userselectboard .third label {
   width: 100px;
 }
 
-.userselectboard .fifth {
+.mainsection .content .real-content .userselectboard .fourth {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -132,7 +106,7 @@
   background: #FFF;
 }
 
-.fifth h1 {
+.mainsection .content .real-content .userselectboard .fourth h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -141,11 +115,37 @@
   line-height: normal;
 }
 
-.fifth label {
+.mainsection .content .real-content .userselectboard .fourth label {
   width: 100px;
 }
 
-.mainsection .content .items1 {
+.mainsection .content .real-content .userselectboard .fifth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  width: 150px;
+  height: 43.247px;
+  flex-shrink: 0;
+  border-radius: 8.317px;
+  background: #FFF;
+}
+
+.mainsection .content .real-content .userselectboard .fifth h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16.633px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mainsection .content .real-content .userselectboard .fifth label {
+  width: 100px;
+}
+
+.mainsection .content .real-content .items1 {
   margin-top: 30px;
   margin-left: 120px;
   margin-right: 100px;
@@ -155,7 +155,7 @@
   align-items: center;
 }
 
-.items1 .item {
+.mainsection .content .real-content .items1 .item {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,7 +169,7 @@
   background: #FFF;
 }
 
-.mainsection .content .items2 {
+.mainsection .content .real-content .items2 {
   margin-top: 10px;
   margin-left: 120px;
   margin-right: 100px;
@@ -179,7 +179,7 @@
   align-items: center;
 }
 
-.items2 .item {
+.mainsection .content .real-content .items2 .item {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -193,24 +193,29 @@
   background: #FFF;
 }
 
-.mainsection .content button {
+
+.mainsection .content .buttoncontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.mainsection .content .buttoncontent button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 13px;
   background: #222;
-  margin-top: 30px;
-  margin-left: 40%;
-  margin-bottom: 30px;
-  width: 20%;
-  height: 82px;
+  width: 200px;
+  height: 80px;
   flex-shrink: 0;
   border: none;
   box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
 }
 
-.mainsection .content button h1 {
+.mainsection .content .buttoncontent button h1 {
   color: #FFF;
   text-align: center;
   font-family: Inter;

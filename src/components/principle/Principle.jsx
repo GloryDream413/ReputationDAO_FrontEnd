@@ -109,62 +109,66 @@ export const Principle = () => {
         </div>
       </div>
       <div className='content'>
-        <div className='walletinfo'>
-            <div className='walletaddress'>
-                <img src={connected_status_icon} alt="connected_status_icon"/>
-                <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
-            </div>
-        </div>
-        <div className='mainlogo'>
-            <img src={mainlogo} alt="mainlogo"/>
-        </div>
-        <div className='title'>
-            <h1>Next, pick your principles</h1>
-        </div>
-        <div className='description'>
-            <h1>Principles are the values you really care about. Reputation DAO will ask you to rate a proposal on its alignment with the communities values. Your top 5 are in no particular order!</h1>
-        </div>
-        <div className='userselect'>
-            <div className='userselectboard'>
-                <div className='first'>
-                    <h1>1.</h1>
-                    <label id="1"></label>
-                </div>
-                <div className='second'>
-                    <h1>2.</h1>
-                    <label id="2"></label>
-                </div>
-                <div className='third'>
-                    <h1>3.</h1>
-                    <label id="3"></label>
-                </div>
-                <div className='fourth'>
-                    <h1>4.</h1>
-                    <label id="4"></label>
-                </div>
-                <div className='fifth'>
-                    <h1>5.</h1>
-                    <label id="5"></label>
+        <div className='real-content'>
+            <div className='walletinfo'>
+                <div className='walletaddress'>
+                    <img src={connected_status_icon} alt="connected_status_icon"/>
+                    <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
                 </div>
             </div>
+            <div className='mainlogo'>
+                <img src={mainlogo} alt="mainlogo"/>
+            </div>
+            <div className='title'>
+                <h1>Next, pick your principles</h1>
+            </div>
+            <div className='description'>
+                <h1>Principles are the values you really care about. Reputation DAO will ask you to rate a proposal on its alignment with the communities values. Your top 5 are in no particular order!</h1>
+            </div>
+            <div className='userselect'>
+                <div className='userselectboard'>
+                    <div className='first'>
+                        <h1>1.</h1>
+                        <label id="1"></label>
+                    </div>
+                    <div className='second'>
+                        <h1>2.</h1>
+                        <label id="2"></label>
+                    </div>
+                    <div className='third'>
+                        <h1>3.</h1>
+                        <label id="3"></label>
+                    </div>
+                    <div className='fourth'>
+                        <h1>4.</h1>
+                        <label id="4"></label>
+                    </div>
+                    <div className='fifth'>
+                        <h1>5.</h1>
+                        <label id="5"></label>
+                    </div>
+                </div>
+            </div>
+            <div className='items1'>
+                <div className='item' id="Sustainability" onClick={onClickItem}>Sustainability</div>
+                <div className='item' id="Prosperity" onClick={onClickItem}>Prosperity</div>
+                <div className='item' id="Security" onClick={onClickItem}>Security</div>
+                <div className='item' id="Collaboration" onClick={onClickItem}>Collaboration</div>
+                <div className='item' id="Growth" onClick={onClickItem}>Growth</div>
+                <div className='item' id="Improvement" onClick={onClickItem}>Improvement</div>
+            </div>
+            <div className='items2'>
+                <div className='item' id="Innovation" onClick={onClickItem}>Innovation</div>
+                <div className='item' id="Community" onClick={onClickItem}>Community</div>
+                <div className='item' id="Meaning" onClick={onClickItem}>Meaning</div>
+                <div className='item' id="Reputation" onClick={onClickItem}>Reputation</div>
+                <div className='item' id="Reliability" onClick={onClickItem}>Reliability</div>
+                <div className='item' id="Value" onClick={onClickItem}>Value</div>
+            </div>
         </div>
-        <div className='items1'>
-            <div className='item' id="Sustainability" onClick={onClickItem}>Sustainability</div>
-            <div className='item' id="Prosperity" onClick={onClickItem}>Prosperity</div>
-            <div className='item' id="Security" onClick={onClickItem}>Security</div>
-            <div className='item' id="Collaboration" onClick={onClickItem}>Collaboration</div>
-            <div className='item' id="Growth" onClick={onClickItem}>Growth</div>
-            <div className='item' id="Improvement" onClick={onClickItem}>Improvement</div>
+        <div className='buttoncontent'>
+            <button onClick={onSavingPrinciple}><h1>Next</h1></button>
         </div>
-        <div className='items2'>
-            <div className='item' id="Innovation" onClick={onClickItem}>Innovation</div>
-            <div className='item' id="Community" onClick={onClickItem}>Community</div>
-            <div className='item' id="Meaning" onClick={onClickItem}>Meaning</div>
-            <div className='item' id="Reputation" onClick={onClickItem}>Reputation</div>
-            <div className='item' id="Reliability" onClick={onClickItem}>Reliability</div>
-            <div className='item' id="Value" onClick={onClickItem}>Value</div>
-        </div>
-        <button onClick={onSavingPrinciple}><h1>Next</h1></button>
       </div>
     </div>
   );

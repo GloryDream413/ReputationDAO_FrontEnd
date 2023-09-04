@@ -76,28 +76,32 @@ export const Collectemail = () => {
         </div>
       </div>
       <div className='content'>
-        <div className='walletinfo'>
-            <div className='walletaddress'>
-                <img src={connected_status_icon} alt="connected_status_icon"/>
-                <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
-            </div>
+        <div className='real-content'>
+          <div className='walletinfo'>
+              <div className='walletaddress'>
+                  <img src={connected_status_icon} alt="connected_status_icon"/>
+                  <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
+              </div>
+          </div>
+          <div className='mainlogo'>
+              <img src={mainlogo} alt="mainlogo"/>
+          </div>
+          <div className='title'>
+              <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
+          </div>
+          <div className='description'>
+              <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
+          </div>
+          <div className='email'>
+              <input 
+                placeholder='Insert email address'
+                value={email}
+                onChange={onEmailChange} />
+          </div>
         </div>
-        <div className='mainlogo'>
-            <img src={mainlogo} alt="mainlogo"/>
+        <div className='buttoncontent'>
+          <button onClick={onSavingEmail}><h1>Next</h1></button>
         </div>
-        <div className='title'>
-            <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
-        </div>
-        <div className='description'>
-            <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
-        </div>
-        <div className='email'>
-            <input 
-              placeholder='Insert email address'
-              value={email}
-              onChange={onEmailChange} />
-        </div>
-        <button onClick={onSavingEmail}><h1>Next</h1></button>
       </div>
     </div>
   );

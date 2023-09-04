@@ -1,26 +1,25 @@
-.mainsection .content .options {
+.mainsection .content .real-content .options {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 }
 
-.mainsection .content .options .option {
+.mainsection .content .real-content .options .option {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  height: 50px;
+  height: 35px;
   flex-shrink: 0;
   border-radius: 10px;
   border: 1px solid #68C0FF;
   background: #FFF;
-  margin-top: 5px;
   margin-right: 10px;
 }
 
-.mainsection .content .options .option h1 {
+.mainsection .content .real-content .options .option h1 {
   margin-left: 10px;
   color: #000;
   font-family: Inter;
@@ -30,7 +29,7 @@
   line-height: normal;
 }
 
-.mainsection .content .options .option .checkbuttons {
+.mainsection .content .real-content .options .option .checkbuttons {
   margin-right: 5px;
   display: flex;
   flex-direction: row;
@@ -38,30 +37,34 @@
   align-items: center;
 }
 
-.mainsection .content .options .option .checkbuttons img {
-  width: 20px;
-  height: 20px;
+.mainsection .content .real-content .options .option .checkbuttons img {
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 
-.mainsection .content button {
+.mainsection .content .buttoncontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.mainsection .content .buttoncontent button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 13px;
   background: #222;
-  margin-top: 30px;
-  margin-left: 40%;
-  margin-bottom: 30px;
-  width: 20%;
-  height: 82px;
+  width: 200px;
+  height: 80px;
   flex-shrink: 0;
   border: none;
   box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
 }
 
-.mainsection .content button h1 {
+.mainsection .content .buttoncontent button h1 {
   color: #FFF;
   text-align: center;
   font-family: Inter;

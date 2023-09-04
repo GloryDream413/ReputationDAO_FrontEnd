@@ -3,6 +3,11 @@
   src: url("./assets/Inter-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Regular";
+  src: url("./assets/Inter-Light.ttf");
+}
+
 body, html {
   background: linear-gradient(180deg, #FFB366 0%, #FFB8C5 100%);
   position: relative;
@@ -89,7 +94,7 @@ body, html {
 .mainsection .menu .logoitem .menuitems .dao_icon h1 {
   width: 150px;
   flex-shrink: 0;
-  color: #000;
+  color: #888;
   font-family: Inter;
   font-size: 28px;
   font-style: normal;
@@ -123,7 +128,7 @@ body, html {
 .mainsection .menu .logoitem .menuitems .airdrop_icon h1 {
   width: 150px;
   flex-shrink: 0;
-  color: #000;
+  color: #888;
   font-family: Inter;
   font-size: 28px;
   font-style: normal;
@@ -194,12 +199,12 @@ body, html {
   flex-direction: row;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .mainsection .content .mainlogo img {
-  width: 150px;
-  height: 123.913px;
+  width: 120px;
+  height: 100px;
 }
 
 .mainsection .content .title {
@@ -213,7 +218,7 @@ body, html {
   width: 50%;
   color: #000;
   font-family: Inter;
-  font-size: 45px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -230,8 +235,8 @@ body, html {
   margin-left: 20%;
   width: 50%;
   color: #000;
-  font-family: Inter;
-  font-size: 25px;
+  font-family: Regular;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

@@ -4,6 +4,16 @@ body, html {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("../../assets/Inter-Light.ttf");
+}
+
 .mainsection2 {
   display: flex;
   flex-direction: row;
@@ -144,19 +154,20 @@ body, html {
 .mainsection2 .content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-top: 20px;
   width: 80%;
   position: relative;
 }
 
-.mainsection2 .content .walletinfo {
+.mainsection2 .content .real-content .walletinfo {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 20px;
 }
 
-.mainsection2 .content .walletinfo .walletaddress {
+.mainsection2 .content .real-content .walletinfo .walletaddress {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,12 +180,12 @@ body, html {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
 }
 
-.mainsection2 .content .walletinfo .walletaddress img {
+.mainsection2 .content .real-content .walletinfo .walletaddress img {
   width: 10px;
   height: 10px;
 }
 
-.walletaddress h1 {
+.mainsection2 .content .real-content .walletinfo .walletaddress h1 {
   margin-left: 10px;
   color: #000;
   text-align: center;
@@ -185,53 +196,17 @@ body, html {
   line-height: normal;
 }
 
-.mainsection2 .content .mainlogo {
+.mainsection2 .content .real-content .mainlogo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .mainsection2 .content .mainlogo img {
-  width: 150px;
-  height: 123.913px;
-}
-
-.mainsection2 .content .title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.mainsection2 .content .title h1 {
-  width: 50%;
-  color: #000;
-  font-family: Inter;
-  font-size: 58px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-left: 0px;
-}
-
-.mainsection2 .content .description {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 90px;
-}
-
-.mainsection2 .content .description h1 {
-  margin-left: 20%;
-  width: 50%;
-  color: #000;
-  font-family: Inter;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-left: 0px;
+  width: 100px;
+  height: 80px;
 }
 
 .mainsection2 .content .title {
@@ -247,7 +222,7 @@ body, html {
   justify-content: center;
   color: #000;
   font-family: Inter;
-  font-size: 48px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -261,11 +236,10 @@ body, html {
 
 .description h1 {
   width: 793px;
-  height: 100px;
   flex-shrink: 0;
   color: #000;
-  font-family: Inter;
-  font-size: 28px;
+  font-family: Regular;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -311,36 +285,9 @@ body, html {
 }
 
 .checkbuttons img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
-}
-
-.mainsection2 .content button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 13px;
-  background: #222;
-  margin-top: 30px;
-  margin-left: 40%;
-  margin-bottom: 30px;
-  width: 20%;
-  height: 82px;
-  flex-shrink: 0;
-  border: none;
-  box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
-}
-
-.mainsection2 .content button h1 {
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 36.444px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 }
 
 .mainsection2 .content .timelabel {
@@ -360,7 +307,7 @@ body, html {
   flex-shrink: 0;
   color: #000;
   text-align: center;
-  font-family: Inter;
+  font-family: Regular;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -379,8 +326,8 @@ body, html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  height: 72px;
+  width: 250px;
+  height: 60px;
   flex-shrink: 0;
   border-radius: 10px;
   background: #FFF;
@@ -410,14 +357,14 @@ body, html {
   line-height: normal;
 }
 
-.mainsection2 .content .userselect {
+.mainsection2 .content .real-content .userselect {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.mainsection2 .content .userselect .userselect .userselectboard {
+.mainsection2 .content .real-content .userselect .userselectboard {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -429,7 +376,7 @@ body, html {
   background: linear-gradient(180deg, #8E66FF 0%, #FFB8C5 100%);
 }
 
-.userselectboard .first {
+.mainsection2 .content .real-content .userselectboard .first {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -441,7 +388,7 @@ body, html {
   background: #FFF;
 }
 
-.first h1 {
+.mainsection2 .content .real-content .userselectboard .first h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -450,11 +397,11 @@ body, html {
   line-height: normal;
 }
 
-.first label {
+.mainsection2 .content .real-content .userselectboard .first label {
   width: 100px;
 }
 
-.userselectboard .second {
+.mainsection2 .content .real-content .userselectboard .second {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -467,7 +414,7 @@ body, html {
   background: #FFF;
 }
 
-.second h1 {
+.mainsection2 .content .real-content .userselectboard .second h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -476,11 +423,11 @@ body, html {
   line-height: normal;
 }
 
-.second label {
+.mainsection2 .content .real-content .userselectboard .second label {
   width: 100px;
 }
 
-.userselectboard .third {
+.mainsection2 .content .real-content .userselectboard .third {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -493,7 +440,7 @@ body, html {
   background: #FFF;
 }
 
-.third h1 {
+.mainsection2 .content .real-content .userselectboard .third h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -502,11 +449,11 @@ body, html {
   line-height: normal;
 }
 
-.third label {
+.mainsection2 .content .real-content .userselectboard .third label {
   width: 100px;
 }
 
-.userselectboard .fourth {
+.mainsection2 .content .real-content .userselectboard .fourth {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -519,7 +466,7 @@ body, html {
   background: #FFF;
 }
 
-.fourth h1 {
+.mainsection2 .content .real-content .userselectboard .fourth h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -528,11 +475,11 @@ body, html {
   line-height: normal;
 }
 
-.fourth label {
+.mainsection2 .content .real-content .userselectboard .fourth label {
   width: 100px;
 }
 
-.userselectboard .fifth {
+.mainsection2 .content .real-content .userselectboard .fifth {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -545,7 +492,7 @@ body, html {
   background: #FFF;
 }
 
-.fifth h1 {
+.mainsection2 .content .real-content .userselectboard .fifth h1 {
   color: #000;
   font-family: Inter;
   font-size: 16.633px;
@@ -554,6 +501,6 @@ body, html {
   line-height: normal;
 }
 
-.fifth label {
+.mainsection2 .content .real-content .userselectboard .fifth label {
   width: 100px;
 }

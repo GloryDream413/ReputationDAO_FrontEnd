@@ -1,11 +1,22 @@
-.mainsection .content .email {
+.mainsection .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainsection .content a {
+  text-decoration: none;
+}
+
+.mainsection .content .real-content .email {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.email input {
+.mainsection .content .real-content .email input {
   width: 548px;
   height: 51px;
   flex-shrink: 0;
@@ -17,7 +28,7 @@
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
 }
   
-.email input::placeholder {
+.mainsection .content .real-content .email input::placeholder {
   /* Center the placeholder text vertically and horizontally */
   position: absolute;
   top: 50%;
@@ -26,24 +37,28 @@
   color: #aaa; /* Placeholder text color */
 }
 
-.mainsection .content button {
+.mainsection .content .buttoncontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.mainsection .content .buttoncontent button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 13px;
   background: #222;
-  margin-top: 30px;
-  margin-left: 40%;
-  margin-bottom: 30px;
-  width: 20%;
-  height: 82px;
+  width: 200px;
+  height: 80px;
   flex-shrink: 0;
   border: none;
   box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
 }
 
-.mainsection .content button h1 {
+.mainsection .content .buttoncontent button h1 {
   color: #FFF;
   text-align: center;
   font-family: Inter;
@@ -51,8 +66,4 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-}
-
-.mainsection .content a {
-  text-decoration: none;
 }
