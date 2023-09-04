@@ -37,6 +37,12 @@ export const Collectemail = () => {
       toast.error('Please input email');
       return;
     }
+
+    const isValidEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    if (email.trim().length === 0 || email.match(isValidEmail) === null) {
+      toast.error("Email address value is invalid. Please try again")
+      return;
+    }
     else
     {
       navigate("/principle");
