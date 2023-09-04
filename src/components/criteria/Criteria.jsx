@@ -122,7 +122,7 @@ export const Criteria = () => {
 
     const data = {
       address: walletAddress,
-      email: email,
+      // email: email,
       principles: [principle1, principle2, principle3, principle4, principle5],
       criteria: {
         "Commercialise reputation and verification services.": isVote[item1Status],
