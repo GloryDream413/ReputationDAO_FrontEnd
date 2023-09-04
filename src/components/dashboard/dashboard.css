@@ -36,6 +36,7 @@
   margin-left: 25%;
   border: none;
   box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
+  cursor: pointer;
 }
 
 .mainsection1 .walletconnect button h1 {
