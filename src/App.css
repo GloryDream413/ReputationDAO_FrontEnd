@@ -148,6 +148,7 @@ body, html {
 
 .mainsection .menu .social_icon img {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .mainsection .content {
