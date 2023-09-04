@@ -55,18 +55,14 @@ export const Collectemail = () => {
                 <h1>Genesis</h1>
             </div>
             </Link>
-            <Link to="/coming">
             <div className='dao_icon'>
                 <img src={dao_icon} alt="dao_icon"/>
                 <h1>DAO</h1>
             </div>
-            </Link>
-            <Link to="/coming">
             <div className='airdrop_icon'>
                 <img src={airdrop_icon} alt="airdrop_icon"/>
                 <h1>Airdrop</h1>
             </div>
-            </Link>
           </div>
         </div>
         <div className='social_icon'>
