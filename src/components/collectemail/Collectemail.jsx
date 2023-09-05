@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { useMedia } from 'react-use';
 import './collectemail.css';
 import { useNavigate } from 'react-router-dom';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
@@ -49,8 +50,10 @@ export const Collectemail = () => {
     }
   }
 
+  const below600 = useMedia('(max-width: 600px)')
   return (
     <div className="mainsection">
+      {!below600 && (
       <div className='menu'>
         <div className='logoitem'>
           <img src={WalletConnectLogo} alt="walletconnectlogo"/>
@@ -77,6 +80,8 @@ export const Collectemail = () => {
             <img src={telegram_icon} alt="telegram_icon"/>
         </div>
       </div>
+      )}
+      {!below600 && (
       <div className='content'>
         <div className='real-content'>
           <div className='walletinfo'>
@@ -105,6 +110,35 @@ export const Collectemail = () => {
           <button onClick={onSavingEmail}><h1>Next</h1></button>
         </div>
       </div>
+      )}
+      {below600 && (
+      <div className='menu_mobile'>
+        <div className='logoitem'>
+          <img src={WalletConnectLogo} alt="walletconnectlogo"/>
+          <div className='menuitems'>
+            <Link to="/collectemail">
+            <div className='genesis_icon'>
+                <img src={genesis_icon} alt="genesis_icon"/>
+                <h1>Genesis</h1>
+            </div>
+            </Link>
+            <div className='dao_icon'>
+                <img src={dao_icon} alt="dao_icon"/>
+                <h1>DAO</h1>
+            </div>
+            <div className='airdrop_icon'>
+                <img src={airdrop_icon} alt="airdrop_icon"/>
+                <h1>Airdrop</h1>
+            </div>
+          </div>
+        </div>
+        <div className='social_icon'>
+            <img src={vector_icon} alt="vector_icon"/>
+            <img src={twitter_icon} alt="twitter_icon"/>
+            <img src={telegram_icon} alt="telegram_icon"/>
+        </div>
+      </div>
+      )}
     </div>
   );
 };
