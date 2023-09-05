@@ -21,6 +21,8 @@ body, html {
   height: 100vh;
 }
 
+
+
 .mainsection .menu {
   display: flex;
   flex-direction: column;
@@ -154,9 +156,15 @@ body, html {
 .mainsection .content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   width: 80%;
   position: relative;
+}
+
+.mainsection .content a {
+  text-decoration: none;
 }
 
 .mainsection .content .walletinfo {
@@ -292,6 +300,10 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mainsection_mobile .content a {
+  text-decoration: none;
 }
 
 .mainsection_mobile .menu {
@@ -539,6 +551,7 @@ body, html {
   flex-shrink: 0;
   border: none;
   box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
+  margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
 }
