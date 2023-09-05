@@ -151,161 +151,6 @@ body, html {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-.mainsection .menu_mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: white;
-  width: 100%;
-  height: 50%;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.mainsection .menu_mobile a {
-  text-decoration: none;
-}
-
-.mainsection .menu_mobile img {
-  margin-top: 30px;
-  margin-left: 10%;
-  width: 80%;
-}
-
-.mainsection .menu_mobile .logoitem {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 70px;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .genesis_icon {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin-left: 10%;
-  align-items: center;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .genesis_icon img {
-  width: 20px;
-  height: 20px;
-  margin-left: 13px;
-  margin-top: 0px;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .genesis_icon h1 {
-  width: 150px;
-  flex-shrink: 0;
-  color: #000;
-  font-family: Inter;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-left: 20px;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .dao_icon {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin-left: 10%;
-  align-items: center;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .dao_icon h1 {
-  width: 150px;
-  flex-shrink: 0;
-  color: #888;
-  font-family: Inter;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-left: 20px;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .dao_icon img {
-  width: 20px;
-  height: 20px;
-  margin-left: 13px;
-  margin-top: 0px;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .airdrop_icon {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin-left: 10%;
-  align-items: center;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .airdrop_icon img {
-  width: 20px;
-  height: 20px;
-  margin-left: 13px;
-  margin-top: 0px;
-}
-
-.mainsection .menu_mobile .logoitem .menuitems .airdrop_icon h1 {
-  width: 150px;
-  flex-shrink: 0;
-  color: #888;
-  font-family: Inter;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-left: 20px;
-}
-
-.mainsection .menu_mobile .social_icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: 35%;
-  width: 30%;
-  margin-bottom: 20px;
-}
-
-.mainsection .menu_mobile .social_icon img {
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mainsection .content {
   display: flex;
   flex-direction: column;
@@ -427,6 +272,282 @@ body, html {
   text-align: center;
   font-family: Inter;
   font-size: 36.444px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainsection_mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainsection_mobile .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.mainsection_mobile .menu a {
+  text-decoration: none;
+}
+
+.mainsection_mobile .menu img {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.mainsection_mobile .menu .logoitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .genesis_icon {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-left: 20%;
+  align-items: center;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .genesis_icon img {
+  width: 18px;
+  height: 18px;
+  margin-left: 13px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .genesis_icon h1 {
+  width: 150px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .dao_icon {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-left: 20%;
+  align-items: center;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .dao_icon h1 {
+  width: 150px;
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .dao_icon img {
+  width: 18px;
+  height: 18px;
+  margin-left: 13px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .airdrop_icon {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-left: 20%;
+  align-items: center;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .airdrop_icon img {
+  width: 18px;
+  height: 18px;
+  margin-left: 13px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu .logoitem .menuitems .airdrop_icon h1 {
+  width: 150px;
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.mainsection_mobile .menu .social_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 35%;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.mainsection_mobile .menu .social_icon img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+.mainsection_mobile .content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+}
+
+.mainsection_mobile .content .walletinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.mainsection_mobile .content .walletinfo .walletaddress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 143.27px;
+  height: 38.738px;
+  flex-shrink: 0;
+  border-radius: 6.149px;
+  background: #FFF;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
+}
+
+.mainsection_mobile .content .walletinfo .walletaddress img {
+  width: 10px;
+  height: 10px;
+}
+
+.mainsection_mobile .content .walletinfo .walletaddress h1 {
+  margin-left: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainsection_mobile .content .mainlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+.mainsection_mobile .content .mainlogo img {
+  width: 120px;
+  height: 100px;
+}
+
+.mainsection_mobile .content .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainsection_mobile .content .title h1 {
+  margin-left: 10%;
+  width: 80%;
+  color: #000;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 0px;
+}
+
+.mainsection_mobile .content .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainsection_mobile .content .description h1 {
+  margin-left: 10%;
+  width: 80%;
+  color: #000;
+  font-family: Regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0px;
+}
+
+.mainsection_mobile .content .buttoncontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainsection_mobile .content .buttoncontent button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background: #222;
+  width: 100px;
+  height: 40px;
+  flex-shrink: 0;
+  border: none;
+  box-shadow: 0px 5.2063493728637695px 5.2063493728637695px 1.3015873432159424px rgba(0, 0, 0, 0.50);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.mainsection_mobile .content .buttoncontent button h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;

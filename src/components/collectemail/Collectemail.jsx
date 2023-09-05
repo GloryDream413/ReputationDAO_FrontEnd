@@ -52,90 +52,120 @@ export const Collectemail = () => {
 
   const below600 = useMedia('(max-width: 600px)')
   return (
-    <div className="mainsection">
+    <div>
       {!below600 && (
-      <div className='menu'>
-        <div className='logoitem'>
-          <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-          <div className='menuitems'>
-            <Link to="/collectemail">
-            <div className='genesis_icon'>
-                <img src={genesis_icon} alt="genesis_icon"/>
-                <h1>Genesis</h1>
-            </div>
-            </Link>
-            <div className='dao_icon'>
-                <img src={dao_icon} alt="dao_icon"/>
-                <h1>DAO</h1>
-            </div>
-            <div className='airdrop_icon'>
-                <img src={airdrop_icon} alt="airdrop_icon"/>
-                <h1>Airdrop</h1>
-            </div>
-          </div>
-        </div>
-        <div className='social_icon'>
-            <img src={vector_icon} alt="vector_icon"/>
-            <img src={twitter_icon} alt="twitter_icon"/>
-            <img src={telegram_icon} alt="telegram_icon"/>
-        </div>
-      </div>
-      )}
-      {!below600 && (
-      <div className='content'>
-        <div className='real-content'>
-          <div className='walletinfo'>
-              <div className='walletaddress'>
-                  <img src={connected_status_icon} alt="connected_status_icon"/>
-                  <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
+      <div className="mainsection">
+        <div className='menu'>
+          <div className='logoitem'>
+            <img src={WalletConnectLogo} alt="walletconnectlogo"/>
+            <div className='menuitems'>
+              <Link to="/collectemail">
+              <div className='genesis_icon'>
+                  <img src={genesis_icon} alt="genesis_icon"/>
+                  <h1>Genesis</h1>
               </div>
+              </Link>
+              <div className='dao_icon'>
+                  <img src={dao_icon} alt="dao_icon"/>
+                  <h1>DAO</h1>
+              </div>
+              <div className='airdrop_icon'>
+                  <img src={airdrop_icon} alt="airdrop_icon"/>
+                  <h1>Airdrop</h1>
+              </div>
+            </div>
           </div>
-          <div className='mainlogo'>
-              <img src={mainlogo} alt="mainlogo"/>
-          </div>
-          <div className='title'>
-              <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
-          </div>
-          <div className='description'>
-              <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
-          </div>
-          <div className='email'>
-              <input 
-                placeholder='Insert email address'
-                value={email}
-                onChange={onEmailChange} />
+          <div className='social_icon'>
+              <img src={vector_icon} alt="vector_icon"/>
+              <img src={twitter_icon} alt="twitter_icon"/>
+              <img src={telegram_icon} alt="telegram_icon"/>
           </div>
         </div>
-        <div className='buttoncontent'>
-          <button onClick={onSavingEmail}><h1>Next</h1></button>
+        <div className='content'>
+          <div className='real-content'>
+            <div className='walletinfo'>
+                <div className='walletaddress'>
+                    <img src={connected_status_icon} alt="connected_status_icon"/>
+                    <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
+                </div>
+            </div>
+            <div className='mainlogo'>
+                <img src={mainlogo} alt="mainlogo"/>
+            </div>
+            <div className='title'>
+                <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
+            </div>
+            <div className='description'>
+                <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
+            </div>
+            <div className='email'>
+                <input 
+                  placeholder='Insert email address'
+                  value={email}
+                  onChange={onEmailChange} />
+            </div>
+          </div>
+          <div className='buttoncontent'>
+            <button onClick={onSavingEmail}><h1>Next</h1></button>
+          </div>
         </div>
       </div>
       )}
       {below600 && (
-      <div className='menu_mobile'>
-        <div className='logoitem'>
-          <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-          <div className='menuitems'>
-            <Link to="/collectemail">
-            <div className='genesis_icon'>
-                <img src={genesis_icon} alt="genesis_icon"/>
-                <h1>Genesis</h1>
-            </div>
-            </Link>
-            <div className='dao_icon'>
-                <img src={dao_icon} alt="dao_icon"/>
-                <h1>DAO</h1>
-            </div>
-            <div className='airdrop_icon'>
-                <img src={airdrop_icon} alt="airdrop_icon"/>
-                <h1>Airdrop</h1>
+      <div className="mainsection_mobile">
+        <div className='menu'>
+          <div className='logoitem'>
+            <img src={WalletConnectLogo} alt="walletconnectlogo"/>
+            <div className='menuitems'>
+              <Link to="/collectemail">
+              <div className='genesis_icon'>
+                  <img src={genesis_icon} alt="genesis_icon"/>
+                  <h1>Genesis</h1>
+              </div>
+              </Link>
+              <div className='dao_icon'>
+                  <img src={dao_icon} alt="dao_icon"/>
+                  <h1>DAO</h1>
+              </div>
+              <div className='airdrop_icon'>
+                  <img src={airdrop_icon} alt="airdrop_icon"/>
+                  <h1>Airdrop</h1>
+              </div>
             </div>
           </div>
+          <div className='social_icon'>
+              <img src={vector_icon} alt="vector_icon"/>
+              <img src={twitter_icon} alt="twitter_icon"/>
+              <img src={telegram_icon} alt="telegram_icon"/>
+          </div>
         </div>
-        <div className='social_icon'>
-            <img src={vector_icon} alt="vector_icon"/>
-            <img src={twitter_icon} alt="twitter_icon"/>
-            <img src={telegram_icon} alt="telegram_icon"/>
+        <div className='content'>
+          <div className='real-content'>
+            <div className='walletinfo'>
+                <div className='walletaddress'>
+                    <img src={connected_status_icon} alt="connected_status_icon"/>
+                    <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
+                </div>
+            </div>
+            <div className='mainlogo'>
+                <img src={mainlogo} alt="mainlogo"/>
+            </div>
+            <div className='title'>
+                <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
+            </div>
+            <div className='description'>
+                <h1>To begin, please enter your email address. This is used to keep you updated on important DAO activity only - we won’t spam!</h1>
+            </div>
+            <div className='email'>
+                <input 
+                  placeholder='Insert email address'
+                  value={email}
+                  onChange={onEmailChange} />
+            </div>
+          </div>
+          <div className='buttoncontent'>
+            <button onClick={onSavingEmail}><h1>Next</h1></button>
+          </div>
         </div>
       </div>
       )}
