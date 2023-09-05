@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { useMedia } from 'react-use'
 import { useNavigate } from 'react-router-dom';
 import './dashboard.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
@@ -25,9 +26,10 @@ export const Dashboard = () => {
       navigate("/collectemail");
     }
   };
-
+  const below600 = useMedia('(max-width: 600px)')
   return (
     <div className="mainsection1">
+      {!below600 && (
       <div className="walletconnect">
         <img src={WalletConnectLogo} alt="walletconnectlogo"/>
         <button onClick={connectWalletPressed}><h1>Connect Wallet</h1></button>
@@ -37,6 +39,18 @@ export const Dashboard = () => {
           <img src={genesis_icon} alt="genesis"/>
         </div>
       </div>
+      )}
+      {below600 && (
+      <div className="walletconnect_mobile">
+        <img src={WalletConnectLogo} alt="walletconnectlogo"/>
+        <button onClick={connectWalletPressed}><h1>Connect Wallet</h1></button>
+        <div className='icons'>
+          <img src={airdrop_icon} alt="airdrop"/>
+          <img src={dao_icon} alt="dao"/>
+          <img src={genesis_icon} alt="genesis"/>
+        </div>
+      </div>
+      )}
     </div>
   );
 };
