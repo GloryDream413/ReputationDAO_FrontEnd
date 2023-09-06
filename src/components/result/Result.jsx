@@ -127,14 +127,14 @@ export const Result = () => {
                 <h1>Commercialise reputation and verification services.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
               <div className='option'>
                 <h1>Provide liquidity to other protocols.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
             </div>
@@ -142,14 +142,14 @@ export const Result = () => {
               <div className='option'>
                 <h1>Utilise treasury funds in yield and staking.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
               <div className='option'>
                 <h1>Fund bad actor detection and bounty hunting.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
@@ -159,14 +159,14 @@ export const Result = () => {
                 <h1>Fund development of RDAO ecosystem.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
               <div className='option'>
                 <h1>Actively manage DAO as an investment fund.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
             </div>
@@ -174,14 +174,14 @@ export const Result = () => {
               <div className='option'>
                 <h1>Invest in early stage protocols.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
               <div className='option'>
                 <h1>Invest in NFT’s.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
@@ -276,7 +276,7 @@ export const Result = () => {
                 <h1>Commercialise reputation and verification services.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
             </div>
@@ -285,7 +285,7 @@ export const Result = () => {
                 <h1>Provide liquidity to other protocols.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
             </div>
@@ -293,7 +293,7 @@ export const Result = () => {
               <div className='option'>
                 <h1>Utilise treasury funds in yield and staking.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
@@ -302,7 +302,7 @@ export const Result = () => {
               <div className='option'>
                 <h1>Fund bad actor detection and bounty hunting.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
@@ -312,7 +312,7 @@ export const Result = () => {
                 <h1>Fund development of RDAO ecosystem.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
             </div>
@@ -321,7 +321,7 @@ export const Result = () => {
                 <h1>Actively manage DAO as an investment fund.</h1>
                 <div className='checkbuttons'>
                   <img src={confirm_check} alt="confirm_check"/>
-                  <h1>75%</h1>
+                  <h2>75%</h2>
                 </div>
               </div>
             </div>
@@ -329,7 +329,7 @@ export const Result = () => {
               <div className='option'>
                 <h1>Invest in early stage protocols.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
@@ -338,14 +338,13 @@ export const Result = () => {
               <div className='option'>
                 <h1>Invest in NFT’s.</h1>
                 <div className='checkbuttons'>
-                  <h1>55%</h1>
+                  <h2>55%</h2>
                   <img src={confirm_cross} alt="confirm_cross"/>
                 </div>
               </div>
             </div>
           </div>
-          <div className='buttoncontent'>
-          </div>
+          <br/>
         </div>
       </div>
       )}
