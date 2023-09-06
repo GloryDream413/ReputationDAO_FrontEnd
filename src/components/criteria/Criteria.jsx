@@ -442,6 +442,8 @@ export const Criteria = () => {
                   )}
                 </div>
               </div>
+            </div>
+            <div className='options'>
               <div className='option'>
                 <h1>Provide liquidity to other protocols.</h1>
                 <div className='checkbuttons'>
@@ -478,6 +480,8 @@ export const Criteria = () => {
                   )}
                 </div>
               </div>
+            </div>
+            <div className='options'>
               <div className='option'>
                 <h1>Fund bad actor detection and bounty hunting.</h1>
                 <div className='checkbuttons'>
@@ -514,6 +518,8 @@ export const Criteria = () => {
                   )}
                 </div>
               </div>
+            </div>
+            <div className='options'>
               <div className='option'>
                 <h1>Actively manage DAO as an investment fund.</h1>
                 <div className='checkbuttons'>
@@ -550,6 +556,8 @@ export const Criteria = () => {
                   )}
                 </div>
               </div>
+            </div>
+            <div className='options'>
               <div className='option'>
                 <h1>Invest in NFT’s.</h1>
                 <div className='checkbuttons'>

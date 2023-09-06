@@ -43,3 +43,55 @@
   flex-shrink: 0;
   cursor: pointer;
 }
+
+
+
+
+
+
+.mainsection_mobile .content .real-content .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 7px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.mainsection_mobile .content .real-content .options .option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #68C0FF;
+  background: #FFF;
+}
+
+.mainsection_mobile .content .real-content .options .option h1 {
+  margin-left: 10px;
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mainsection_mobile .content .real-content .options .option .checkbuttons {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainsection_mobile .content .real-content .options .option .checkbuttons img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
