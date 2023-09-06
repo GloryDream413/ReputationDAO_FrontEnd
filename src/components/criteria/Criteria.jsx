@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useMedia } from 'react-use';
 import { useNavigate } from 'react-router-dom';
 import './criteria.css';
 import WalletConnectLogo from '../../assets/WalletConnectLogo.png'
@@ -179,200 +180,401 @@ export const Criteria = () => {
     document.getElementById('submit').disabled = false;
   }
 
+  const below600 = useMedia('(max-width: 600px)')
   return (
-    <div className="mainsection">
-      <div className='menu'>
-        <div className='logoitem'>
-          <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-          <div className='menuitems'>
-            <Link to="/collectemail">
-            <div className='genesis_icon'>
-                <img src={genesis_icon} alt="genesis_icon"/>
-                <h1>Genesis</h1>
-            </div>
-            </Link>
-            <div className='dao_icon'>
-                <img src={dao_icon} alt="dao_icon"/>
-                <h1>DAO</h1>
-            </div>
-            <div className='airdrop_icon'>
-                <img src={airdrop_icon} alt="airdrop_icon"/>
-                <h1>Airdrop</h1>
+    <div>
+      {!below600 && (
+      <div className="mainsection">
+        <div className='menu'>
+          <div className='logoitem'>
+            <img src={WalletConnectLogo} alt="walletconnectlogo"/>
+            <div className='menuitems'>
+              <Link to="/collectemail">
+              <div className='genesis_icon'>
+                  <img src={genesis_icon} alt="genesis_icon"/>
+                  <h1>Genesis</h1>
+              </div>
+              </Link>
+              <div className='dao_icon'>
+                  <img src={dao_icon} alt="dao_icon"/>
+                  <h1>DAO</h1>
+              </div>
+              <div className='airdrop_icon'>
+                  <img src={airdrop_icon} alt="airdrop_icon"/>
+                  <h1>Airdrop</h1>
+              </div>
             </div>
           </div>
+          <div className='social_icon'>
+              <img src={vector_icon} alt="vector_icon"/>
+              <img src={twitter_icon} alt="twitter_icon"/>
+              <img src={telegram_icon} alt="telegram_icon"/>
+          </div>
         </div>
-        <div className='social_icon'>
-            <img src={vector_icon} alt="vector_icon"/>
-            <img src={twitter_icon} alt="twitter_icon"/>
-            <img src={telegram_icon} alt="telegram_icon"/>
+        <div className='content'>
+          <div className='real-content'>
+            <div className='walletinfo'>
+                <div className='walletaddress'>
+                    <img src={connected_status_icon} alt="connected_status_icon"/>
+                    <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
+                </div>
+            </div>
+            <div className='mainlogo'>
+                <img src={mainlogo} alt="mainlogo"/>
+            </div>
+            <div className='title'>
+                <h1>Lastly, pick your criteria</h1>
+            </div>
+            <div className='description'>
+                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Commercialise reputation and verification services.</h1>
+                <div className='checkbuttons'>
+                  {item1Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item1Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem1}/>
+                  )}
+                  {item1Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item1Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem1}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Provide liquidity to other protocols.</h1>
+                <div className='checkbuttons'>
+                  {item2Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item2Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem2}/>
+                  )}
+                  {item2Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item2Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem2}/>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Utilise treasury funds in yield and staking.</h1>
+                <div className='checkbuttons'>
+                  {item3Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item3Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem3}/>
+                  )}
+                  {item3Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item3Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem3}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Fund bad actor detection and bounty hunting.</h1>
+                <div className='checkbuttons'>
+                  {item4Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item4Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem4}/>
+                  )}
+                  {item4Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item4Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem4}/>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Fund development of RDAO ecosystem.</h1>
+                <div className='checkbuttons'>
+                  {item5Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item5Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem5}/>
+                  )}
+                  {item5Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item5Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem5}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Actively manage DAO as an investment fund.</h1>
+                <div className='checkbuttons'>
+                  {item6Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item6Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem6}/>
+                  )}
+                  {item6Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item6Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem6}/>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Invest in early stage protocols.</h1>
+                <div className='checkbuttons'>
+                  {item7Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item7Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem7}/>
+                  )}
+                  {item7Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item7Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem7}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Invest in NFT’s.</h1>
+                <div className='checkbuttons'>
+                  {item8Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item8Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem8}/>
+                  )}
+                  {item8Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item8Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem8}/>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='buttoncontent'>
+            <button id="submit" onClick={onSubmit}><h1>Submit</h1></button>
+          </div>
         </div>
       </div>
-      <div className='content'>
-        <div className='real-content'>
-          <div className='walletinfo'>
-              <div className='walletaddress'>
-                  <img src={connected_status_icon} alt="connected_status_icon"/>
-                  <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
+      )}
+      {below600 && (
+      <div className="mainsection_mobile">
+        <div className='menu'>
+          <div className='logoitem'>
+            <img src={WalletConnectLogo} alt="walletconnectlogo"/>
+            <div className='menuitems'>
+              <Link to="/collectemail">
+              <div className='genesis_icon'>
+                  <img src={genesis_icon} alt="genesis_icon"/>
+                  <h1>Genesis</h1>
               </div>
-          </div>
-          <div className='mainlogo'>
-              <img src={mainlogo} alt="mainlogo"/>
-          </div>
-          <div className='title'>
-              <h1>Lastly, pick your criteria</h1>
-          </div>
-          <div className='description'>
-              <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
-          </div>
-          <div className='options'>
-            <div className='option'>
-              <h1>Commercialise reputation and verification services.</h1>
-              <div className='checkbuttons'>
-                {item1Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item1Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem1}/>
-                )}
-                {item1Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item1Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem1}/>
-                )}
+              </Link>
+              <div className='dao_icon'>
+                  <img src={dao_icon} alt="dao_icon"/>
+                  <h1>DAO</h1>
               </div>
-            </div>
-            <div className='option'>
-              <h1>Provide liquidity to other protocols.</h1>
-              <div className='checkbuttons'>
-                {item2Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item2Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem2}/>
-                )}
-                {item2Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item2Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem2}/>
-                )}
+              <div className='airdrop_icon'>
+                  <img src={airdrop_icon} alt="airdrop_icon"/>
+                  <h1>Airdrop</h1>
               </div>
             </div>
           </div>
-          <div className='options'>
-            <div className='option'>
-              <h1>Utilise treasury funds in yield and staking.</h1>
-              <div className='checkbuttons'>
-                {item3Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item3Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem3}/>
-                )}
-                {item3Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item3Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem3}/>
-                )}
-              </div>
-            </div>
-            <div className='option'>
-              <h1>Fund bad actor detection and bounty hunting.</h1>
-              <div className='checkbuttons'>
-                {item4Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item4Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem4}/>
-                )}
-                {item4Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item4Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem4}/>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className='options'>
-            <div className='option'>
-              <h1>Fund development of RDAO ecosystem.</h1>
-              <div className='checkbuttons'>
-                {item5Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item5Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem5}/>
-                )}
-                {item5Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item5Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem5}/>
-                )}
-              </div>
-            </div>
-            <div className='option'>
-              <h1>Actively manage DAO as an investment fund.</h1>
-              <div className='checkbuttons'>
-                {item6Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item6Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem6}/>
-                )}
-                {item6Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item6Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem6}/>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className='options'>
-            <div className='option'>
-              <h1>Invest in early stage protocols.</h1>
-              <div className='checkbuttons'>
-                {item7Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item7Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem7}/>
-                )}
-                {item7Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item7Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem7}/>
-                )}
-              </div>
-            </div>
-            <div className='option'>
-              <h1>Invest in NFT’s.</h1>
-              <div className='checkbuttons'>
-                {item8Status === 1 && (
-                  <img src={confirm_check} alt="confirm_check"/>
-                )}
-                {item8Status !== 1 && (
-                  <img src={general_check} alt="general_check" onClick={onCheckItem8}/>
-                )}
-                {item8Status === 2 && (
-                  <img src={confirm_cross} alt="confirm_cross"/>
-                )}
-                {item8Status !== 2 && (
-                  <img src={general_cross} alt="general_cross" onClick={onCrossItem8}/>
-                )}
-              </div>
-            </div>
+          <div className='social_icon'>
+              <img src={vector_icon} alt="vector_icon"/>
+              <img src={twitter_icon} alt="twitter_icon"/>
+              <img src={telegram_icon} alt="telegram_icon"/>
           </div>
         </div>
-        <div className='buttoncontent'>
-          <button id="submit" onClick={onSubmit}><h1>Submit</h1></button>
+        <div className='content'>
+          <div className='real-content'>
+            <div className='walletinfo'>
+                <div className='walletaddress'>
+                    <img src={connected_status_icon} alt="connected_status_icon"/>
+                    <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
+                </div>
+            </div>
+            <div className='mainlogo'>
+                <img src={mainlogo} alt="mainlogo"/>
+            </div>
+            <div className='title'>
+                <h1>Lastly, pick your criteria</h1>
+            </div>
+            <div className='description'>
+                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Commercialise reputation and verification services.</h1>
+                <div className='checkbuttons'>
+                  {item1Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item1Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem1}/>
+                  )}
+                  {item1Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item1Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem1}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Provide liquidity to other protocols.</h1>
+                <div className='checkbuttons'>
+                  {item2Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item2Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem2}/>
+                  )}
+                  {item2Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item2Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem2}/>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Utilise treasury funds in yield and staking.</h1>
+                <div className='checkbuttons'>
+                  {item3Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item3Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem3}/>
+                  )}
+                  {item3Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item3Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem3}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Fund bad actor detection and bounty hunting.</h1>
+                <div className='checkbuttons'>
+                  {item4Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item4Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem4}/>
+                  )}
+                  {item4Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item4Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem4}/>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Fund development of RDAO ecosystem.</h1>
+                <div className='checkbuttons'>
+                  {item5Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item5Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem5}/>
+                  )}
+                  {item5Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item5Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem5}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Actively manage DAO as an investment fund.</h1>
+                <div className='checkbuttons'>
+                  {item6Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item6Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem6}/>
+                  )}
+                  {item6Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item6Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem6}/>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className='options'>
+              <div className='option'>
+                <h1>Invest in early stage protocols.</h1>
+                <div className='checkbuttons'>
+                  {item7Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item7Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem7}/>
+                  )}
+                  {item7Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item7Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem7}/>
+                  )}
+                </div>
+              </div>
+              <div className='option'>
+                <h1>Invest in NFT’s.</h1>
+                <div className='checkbuttons'>
+                  {item8Status === 1 && (
+                    <img src={confirm_check} alt="confirm_check"/>
+                  )}
+                  {item8Status !== 1 && (
+                    <img src={general_check} alt="general_check" onClick={onCheckItem8}/>
+                  )}
+                  {item8Status === 2 && (
+                    <img src={confirm_cross} alt="confirm_cross"/>
+                  )}
+                  {item8Status !== 2 && (
+                    <img src={general_cross} alt="general_cross" onClick={onCrossItem8}/>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='buttoncontent'>
+            <button id="submit" onClick={onSubmit}><h1>Submit</h1></button>
+          </div>
         </div>
       </div>
+      )}
     </div>
   );
 };
