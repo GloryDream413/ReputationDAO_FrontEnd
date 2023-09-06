@@ -226,7 +226,7 @@ export const Criteria = () => {
                 <h1>Lastly, pick your criteria</h1>
             </div>
             <div className='description'>
-                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
+                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. Select the ways you think that the DAO should do in order to achieve this! View descriptions of these activities *here* (link: https://docs.reputationdao.co/repdao-governance/criteria-definitions) -  make link a blue colour and underlined to stand out.</h1>
             </div>
             <div className='options'>
               <div className='option'>
@@ -422,7 +422,7 @@ export const Criteria = () => {
                 <h1>Lastly, pick your criteria</h1>
             </div>
             <div className='description'>
-                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. The way that this mission is achieved entirely up to the community!</h1>
+                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. Select the ways you think that the DAO should do in order to achieve this! View descriptions of these activities *here* (link: https://docs.reputationdao.co/repdao-governance/criteria-definitions) -  make link a blue colour and underlined to stand out.</h1>
             </div>
             <div className='options'>
               <div className='option'>
