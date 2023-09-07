@@ -141,14 +141,21 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 90%;
-  margin-left: 35%;
+  margin-left: 37%;
   width: 30%;
   margin-bottom: 20px;
 }
 
+.mainsection2 .menu .social_icon a {
+  margin-right: 30px;
+  width: 20px;
+  cursor: pointer;
+}
+
 .mainsection2 .menu .social_icon img {
+  width: 28px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .mainsection2 .content {
