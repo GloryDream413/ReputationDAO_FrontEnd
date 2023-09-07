@@ -10,6 +10,7 @@
 }
 
 .mainsection .content .real-content .email input {
+  margin-top: 30px;
   width: 548px;
   height: 51px;
   flex-shrink: 0;

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useMedia } from 'react-use';
 import './collectemail.css';
 import { useNavigate } from 'react-router-dom';
@@ -20,6 +20,7 @@ import { toast } from 'react-toastify';
 export const Collectemail = () => {
   const navigate = useNavigate();
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
+  const [isOpen, SetMenuButtonStatus] = useState(false);
   useEffect(()=>{
     const connectWalletPressed = async () => {
       const walletResponse = await connectWallet();
@@ -49,6 +50,10 @@ export const Collectemail = () => {
     {
       navigate("/principle");
     }
+  }
+
+  const onMenuButtonClick = () => {
+    SetMenuButtonStatus(!isOpen);
   }
 
   const below600 = useMedia('(max-width: 600px)')
@@ -116,8 +121,26 @@ export const Collectemail = () => {
       <div className="mainsection_mobile">
         <div className='menu_mobile'>
           <div className='menu_button'>
-            <img src={menu_button} alt="menu_button"/>
+            <img src={menu_button} alt="menu_button" onClick={onMenuButtonClick}/>
           </div>
+          {isOpen && (
+          <div className='menuitems'>
+              <Link to="/collectemail">
+              <div className='genesis_icon'>
+                  <img src={genesis_icon} alt="genesis_icon"/>
+                  <h1>Genesis</h1>
+              </div>
+              </Link>
+              <div className='dao_icon'>
+                  <img src={dao_icon} alt="dao_icon"/>
+                  <h1>DAO</h1>
+              </div>
+              <div className='airdrop_icon'>
+                  <img src={airdrop_icon} alt="airdrop_icon"/>
+                  <h1>Airdrop</h1>
+              </div>
+          </div>
+          )}
         </div>
         <div className='menu'>
           <div className='logoitem'>
