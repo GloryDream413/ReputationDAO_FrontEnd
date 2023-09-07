@@ -186,7 +186,7 @@ export const Criteria = () => {
     SetMenuButtonStatus(!isOpen);
   }
 
-  const below600 = useMedia('(max-width: 800px)')
+  const below600 = useMedia('(max-width: 100px)')
   return (
     <div>
       {!below600 && (
