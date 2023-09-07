@@ -45,6 +45,8 @@
 .mainsection_mobile .content .real-content .email input {
   width: 80%;
   height: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   flex-shrink: 0;
   border-radius: 5px;
   font-size: 15px;
