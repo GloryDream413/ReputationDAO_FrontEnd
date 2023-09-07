@@ -310,8 +310,9 @@ body, html {
 .mainsection_mobile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  height: 100vh;
 }
 
 .mainsection_mobile .menu_mobile {
