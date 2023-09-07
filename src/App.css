@@ -248,6 +248,10 @@ body, html {
   margin-bottom: 10px;
 }
 
+.mainsection .content .description a {
+  text-decoration: underline;
+}
+
 .mainsection .content .description h1 {
   margin-left: 20%;
   width: 50%;
@@ -567,6 +571,10 @@ body, html {
   font-weight: 400;
   line-height: normal;
   margin-left: 0px;
+}
+
+.mainsection_mobile .content .description a {
+  text-decoration: underline;
 }
 
 .mainsection_mobile .content .buttoncontent {
