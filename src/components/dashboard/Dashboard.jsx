@@ -18,7 +18,14 @@ export const Dashboard = () => {
     if(walletResponse.address === '')
     {
       SetWalletAddress('');
-      toast.error('Not Connected.\n' + walletResponse.status);
+      if(walletResponse.status.type === 'span')
+      {
+        toast.error('Not Connected. Please install Metamask.');  
+      }
+      else
+      {
+        toast.error('Not Connected.\n' + walletResponse.status);
+      }
     }
     else
     {
