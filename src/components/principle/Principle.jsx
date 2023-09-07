@@ -155,7 +155,7 @@ export const Principle = () => {
                   <h1>Next, pick your principles</h1>
               </div>
               <div className='description'>
-                  <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles *here* (link: https://docs.reputationdao.co/repdao-governance/principles-definition)-  make link a blue colour and underlined to stand out.</h1>
+                  <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles <a href="https://docs.reputationdao.co/repdao-governance/principles-definition">here</a>.</h1>
               </div>
               <div className='userselect'>
                   <div className='userselectboard'>
@@ -255,7 +255,7 @@ export const Principle = () => {
                   <h1>Next, pick your principles</h1>
               </div>
               <div className='description'>
-                  <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles *here* (link: https://docs.reputationdao.co/repdao-governance/principles-definition)-  make link a blue colour and underlined to stand out.</h1>
+              <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles <a href="https://docs.reputationdao.co/repdao-governance/principles-definition">here</a>.</h1>
               </div>
               <div className='userselect'>
                   <div className='userselectboard'>
