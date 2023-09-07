@@ -109,7 +109,7 @@ export const Principle = () => {
     SetMenuButtonStatus(!isOpen);
   }
   
-  const below600 = useMedia('(max-width: 600px)')
+  const below600 = useMedia('(max-width: 800px)')
   return (
     <div>
       {!below600 && (
