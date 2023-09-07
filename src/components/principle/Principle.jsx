@@ -135,9 +135,9 @@ export const Principle = () => {
               </div>
           </div>
           <div className='social_icon'>
-              <a href="https://docs.reputationdao.co/" target="_blank"><img src={vector_icon} alt="vector_icon"/></a>
-              <a href="https://twitter.com/ReputationDAO" target="_blank"><img src={twitter_icon} alt="twitter_icon"/></a>
-              <a href="https://discord.gg/qz4YNZNkHN" target="_blank"><img src={telegram_icon} alt="telegram_icon"/></a>
+              <a href="https://docs.reputationdao.co/" target="_blank" rel="noopener noreferrer"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO" target="_blank" rel="noopener noreferrer"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN" target="_blank" rel="noopener noreferrer"><img src={telegram_icon} alt="telegram_icon"/></a>
           </div>
         </div>
         <div className='content'>
@@ -155,7 +155,7 @@ export const Principle = () => {
                   <h1>Next, pick your principles</h1>
               </div>
               <div className='description'>
-                  <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles <a href="https://docs.reputationdao.co/repdao-governance/principles-definition" target="_blank">here</a>.</h1>
+                  <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles <a href="https://docs.reputationdao.co/repdao-governance/principles-definition" target="_blank" rel="noopener noreferrer">here</a>.</h1>
               </div>
               <div className='userselect'>
                   <div className='userselectboard'>
@@ -238,9 +238,9 @@ export const Principle = () => {
                 </div>
             </div>
             <div className='social_icon'>
-              <a href="https://docs.reputationdao.co/" target="_blank"><img src={vector_icon} alt="vector_icon"/></a>
-              <a href="https://twitter.com/ReputationDAO" target="_blank"><img src={twitter_icon} alt="twitter_icon"/></a>
-              <a href="https://discord.gg/qz4YNZNkHN" target="_blank"><img src={telegram_icon} alt="telegram_icon"/></a>
+              <a href="https://docs.reputationdao.co/" target="_blank" rel="noopener noreferrer"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO" target="_blank" rel="noopener noreferrer"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN" target="_blank" rel="noopener noreferrer"><img src={telegram_icon} alt="telegram_icon"/></a>
             </div>
           </div>
           )}
@@ -251,7 +251,7 @@ export const Principle = () => {
                   <h1>Next, pick your principles</h1>
               </div>
               <div className='description'>
-              <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles <a href="https://docs.reputationdao.co/repdao-governance/principles-definition" target="_blank">here</a>.</h1>
+              <h1>Select the 5 principles that you think are the most important to the success of the DAO. When proposals are made, you will be asked to consider how much advantage the proposal will provide in the most important areas. Your top 5 are in no particular order. View the definitions of the principles <a href="https://docs.reputationdao.co/repdao-governance/principles-definition" target="_blank" rel="noopener noreferrer">here</a>.</h1>
               </div>
               <div className='userselect'>
                   <div className='userselectboard'>

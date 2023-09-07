@@ -136,9 +136,9 @@ export const Result = () => {
             </div>
           </div>
           <div className='social_icon'>
-              <a href="https://docs.reputationdao.co/" target="_blank"><img src={vector_icon} alt="vector_icon"/></a>
-              <a href="https://twitter.com/ReputationDAO" target="_blank"><img src={twitter_icon} alt="twitter_icon"/></a>
-              <a href="https://discord.gg/qz4YNZNkHN" target="_blank"><img src={telegram_icon} alt="telegram_icon"/></a>
+              <a href="https://docs.reputationdao.co/" target="_blank" rel="noopener noreferrer"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO" target="_blank" rel="noopener noreferrer"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN" target="_blank" rel="noopener noreferrer"><img src={telegram_icon} alt="telegram_icon"/></a>
           </div>
         </div>
         <div className='content'>
@@ -279,9 +279,9 @@ export const Result = () => {
                 </div>
             </div>
             <div className='social_icon'>
-              <a href="https://docs.reputationdao.co/" target="_blank"><img src={vector_icon} alt="vector_icon"/></a>
-              <a href="https://twitter.com/ReputationDAO" target="_blank"><img src={twitter_icon} alt="twitter_icon"/></a>
-              <a href="https://discord.gg/qz4YNZNkHN" target="_blank"><img src={telegram_icon} alt="telegram_icon"/></a>
+              <a href="https://docs.reputationdao.co/" target="_blank" rel="noopener noreferrer"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO" target="_blank" rel="noopener noreferrer"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN" target="_blank" rel="noopener noreferrer"><img src={telegram_icon} alt="telegram_icon"/></a>
             </div>
           </div>
           )}
