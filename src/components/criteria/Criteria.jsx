@@ -212,9 +212,9 @@ export const Criteria = () => {
             </div>
           </div>
           <div className='social_icon'>
-              <a href="https://docs.reputationdao.co/"><img src={vector_icon} alt="vector_icon"/></a>
-              <a href="https://twitter.com/ReputationDAO"><img src={twitter_icon} alt="twitter_icon"/></a>
-              <a href="https://discord.gg/qz4YNZNkHN"><img src={telegram_icon} alt="telegram_icon"/></a>
+              <a href="https://docs.reputationdao.co/" target="_blank"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO" target="_blank"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN" target="_blank"><img src={telegram_icon} alt="telegram_icon"/></a>
           </div>
         </div>
         <div className='content'>
@@ -232,7 +232,7 @@ export const Criteria = () => {
                 <h1>Lastly, pick your criteria</h1>
             </div>
             <div className='description'>
-                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. Select the ways you think that the DAO should do in order to achieve this! View descriptions of these activities <a href="https://docs.reputationdao.co/repdao-governance/criteria-definitions">here</a>.</h1>
+                <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. Select the ways you think that the DAO should do in order to achieve this! View descriptions of these activities <a href="https://docs.reputationdao.co/repdao-governance/criteria-definitions" target="_blank">here</a>.</h1>
             </div>
             <div className='options'>
               <div className='option'>
@@ -419,9 +419,9 @@ export const Criteria = () => {
                 </div>
             </div>
             <div className='social_icon'>
-              <a href="https://docs.reputationdao.co/"><img src={vector_icon} alt="vector_icon"/></a>
-              <a href="https://twitter.com/ReputationDAO"><img src={twitter_icon} alt="twitter_icon"/></a>
-              <a href="https://discord.gg/qz4YNZNkHN"><img src={telegram_icon} alt="telegram_icon"/></a>
+              <a href="https://docs.reputationdao.co/" target="_blank"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO" target="_blank"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN" target="_blank"><img src={telegram_icon} alt="telegram_icon"/></a>
             </div>
           </div>
           )}
@@ -432,7 +432,7 @@ export const Criteria = () => {
                 <h1>Lastly, pick your criteria</h1>
             </div>
             <div className='description'>
-              <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. Select the ways you think that the DAO should do in order to achieve this! View descriptions of these activities <a href="https://docs.reputationdao.co/repdao-governance/criteria-definitions">here</a>.</h1>
+              <h1>The ReputationDAO has one objective: Generate returns for REPD holders by supporting the wider crypto ecosystem. Select the ways you think that the DAO should do in order to achieve this! View descriptions of these activities <a href="https://docs.reputationdao.co/repdao-governance/criteria-definitions" target="_blank">here</a>.</h1>
             </div>
             <div className='options'>
               <div className='option'>
