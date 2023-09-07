@@ -203,47 +203,44 @@ export const Result = () => {
         <div className='menu_mobile'>
           <div className='menu_button'>
             <img src={menu_button} alt="menu_button" onClick={onMenuButtonClick}/>
-          </div>
-          {isOpen && (
-          <div className='menuitems'>
-            <Link to="/collectemail">
-            <div className='genesis_icon'>
-                <img src={genesis_icon} alt="genesis_icon"/>
-                <h1>Genesis</h1>
+            <div className='logoitem'>
+              <img src={mainlogo} alt="mainlogo"/>
             </div>
-            </Link>
-            <div className='dao_icon'>
-                <img src={dao_icon} alt="dao_icon"/>
-                <h1>DAO</h1>
-            </div>
-            <div className='airdrop_icon'>
-                <img src={airdrop_icon} alt="airdrop_icon"/>
-                <h1>Airdrop</h1>
-            </div>
-          </div>
-          )}
-        </div>
-        <div className='menu'>
-          <div className='logoitem'>
-            <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-          </div>
-          <div className='social_icon'>
-              <a href="https://docs.reputationdao.co/"><img src={vector_icon} alt="vector_icon"/></a>
-              <a href="https://twitter.com/ReputationDAO"><img src={twitter_icon} alt="twitter_icon"/></a>
-              <a href="https://discord.gg/qz4YNZNkHN"><img src={telegram_icon} alt="telegram_icon"/></a>
-          </div>
-        </div>
-        <div className='content'>
-          <div className='real-content'>
             <div className='walletinfo'>
                 <div className='walletaddress'>
                     <img src={connected_status_icon} alt="connected_status_icon"/>
                     <h1>{walletAddress.substring(0, 4) + "..." + walletAddress.substring(walletAddress.length-2, walletAddress.length)}</h1>
                 </div>
             </div>
-            <div className='mainlogo'>
-                <img src={mainlogo} alt="mainlogo"/>
+          </div>
+          {isOpen && (
+          <div className='menu'>
+            <div className='menuitems'>
+                <Link to="/collectemail">
+                <div className='genesis_icon'>
+                    <img src={genesis_icon} alt="genesis_icon"/>
+                    <h1>Genesis</h1>
+                </div>
+                </Link>
+                <div className='dao_icon'>
+                    <img src={dao_icon} alt="dao_icon"/>
+                    <h1>DAO</h1>
+                </div>
+                <div className='airdrop_icon'>
+                    <img src={airdrop_icon} alt="airdrop_icon"/>
+                    <h1>Airdrop</h1>
+                </div>
             </div>
+            <div className='social_icon'>
+              <a href="https://docs.reputationdao.co/"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN"><img src={telegram_icon} alt="telegram_icon"/></a>
+            </div>
+          </div>
+          )}
+        </div>
+        <div className='content'>
+          <div className='real-content'>
             <div className='title'>
                 <h1>Results</h1>
             </div>

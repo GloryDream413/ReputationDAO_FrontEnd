@@ -317,7 +317,6 @@ body, html {
 .mainsection_mobile .menu_mobile {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
 }
 
@@ -326,111 +325,70 @@ body, html {
 }
 
 .mainsection_mobile .menu_mobile .menu_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-left: 20px;
   margin-top: 15px;
 }
 
-
-.mainsection_mobile .menu_mobile .menuitems {
-  display: flex;
-  flex-direction: row;
+.mainsection_mobile .menu_mobile .menu_button img {
+  width: 30px;
+  height: 30px;
 }
 
-.mainsection_mobile .menu_mobile .menuitems .genesis_icon {
+.mainsection_mobile .menu_mobile .menu_button .logoitem {
+  width: 30px;
+  height: 30px;
+  margin-left: 70px;
+}
+
+.mainsection_mobile .menu_mobile .menu_button .logoitem img {
+  width: 30px;
+  height: 30px;
+}
+
+.mainsection_mobile .menu_mobile .menu_button .walletinfo {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.mainsection_mobile .menu_mobile .menu_button .walletinfo .walletaddress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  width: 100px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 6.149px;
+  background: #FFF;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
 }
 
-.mainsection_mobile .menu_mobile .menuitems .genesis_icon img {
+.mainsection_mobile .menu_mobile .menu_button .walletinfo .walletaddress img {
   width: 10px;
   height: 10px;
-  margin-left: 5px;
-  margin-top: 0px;
 }
 
-.mainsection_mobile .menu_mobile .menuitems .genesis_icon h1 {
-  flex-shrink: 0;
-  color: #888;
+.mainsection_mobile .menu_mobile .menu_button .walletinfo .walletaddress h1 {
+  margin-left: 10px;
+  color: #000;
+  text-align: center;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-left: 10px;
-}
-
-.mainsection_mobile .menu_mobile .menuitems .dao_icon {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10px;
-  align-items: center;
-}
-
-.mainsection_mobile .menu_mobile .menuitems .dao_icon img {
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  margin-top: 0px;
-}
-
-.mainsection_mobile .menu_mobile .menuitems .dao_icon h1 {
-  flex-shrink: 0;
-  color: #888;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-left: 10px;
-}
-
-.mainsection_mobile .menu_mobile .menuitems .airdrop_icon {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10px;
-  align-items: center;
-}
-
-.mainsection_mobile .menu_mobile .menuitems .airdrop_icon img {
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  margin-top: 0px;
-}
-
-.mainsection_mobile .menu_mobile .menuitems .airdrop_icon h1 {
-  flex-shrink: 0;
-  color: #888;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-left: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-.mainsection_mobile .content a {
-  text-decoration: none;
 }
 
 .mainsection_mobile .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   background: white;
-  width: 90%;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
@@ -438,42 +396,105 @@ body, html {
   border-radius: 5px;
 }
 
-.mainsection_mobile .menu a {
-  text-decoration: none;
-}
-
-.mainsection_mobile .menu img {
-  margin-top: 30px;
-  margin-left: 10%;
-  width: 80%;
-}
-
-.mainsection_mobile .menu .logoitem {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
-
-.mainsection_mobile .menu .social_icon {
+.mainsection_mobile .menu_mobile .menu .menuitems {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 37%;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .genesis_icon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .genesis_icon img {
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .genesis_icon h1 {
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 5px;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .dao_icon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .dao_icon img {
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .dao_icon h1 {
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .airdrop_icon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .airdrop_icon img {
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu_mobile .menu .menuitems .airdrop_icon h1 {
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+
+.mainsection_mobile .menu_mobile .menu .social_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 30%;
-  margin-bottom: 20px;
 }
 
 .mainsection_mobile .menu .social_icon a {
-  margin-right: 30px;
+  margin-right: 20px;
   width: 20px;
   cursor: pointer;
 }
 
 .mainsection_mobile .menu .social_icon img {
-  width: 28px;
-  margin-right: 20px;
+  width: 20px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -486,55 +507,6 @@ body, html {
   flex-direction: column;
   width: 90%;
   position: relative;
-}
-
-.mainsection_mobile .content .walletinfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-top: 10px;
-}
-
-.mainsection_mobile .content .walletinfo .walletaddress {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 143.27px;
-  height: 38.738px;
-  flex-shrink: 0;
-  border-radius: 6.149px;
-  background: #FFF;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.50);
-}
-
-.mainsection_mobile .content .walletinfo .walletaddress img {
-  width: 10px;
-  height: 10px;
-}
-
-.mainsection_mobile .content .walletinfo .walletaddress h1 {
-  margin-left: 10px;
-  color: #000;
-  text-align: center;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.mainsection_mobile .content .mainlogo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-shrink: 0;
-  margin-top: 20px;
-}
-
-.mainsection_mobile .content .mainlogo img {
-  width: 120px;
-  height: 100px;
 }
 
 .mainsection_mobile .content .title {
