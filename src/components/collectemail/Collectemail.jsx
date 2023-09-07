@@ -22,7 +22,7 @@ export const Collectemail = () => {
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
   const [isOpen, SetMenuButtonStatus] = useState(false);
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event) => {console.log ("FFFFFFFFFF")
     if (event.keyCode === 13) {
       // Enter key was pressed
       event.preventDefault(); // Prevent form submission
@@ -183,7 +183,9 @@ export const Collectemail = () => {
                 <input 
                   placeholder='Insert email address'
                   value={email}
-                  onChange={onEmailChange} />
+                  onChange={onEmailChange}
+                  onKeyDown={handleKeyDown}
+                />
             </div>
           </div>
           <div className='buttoncontent'>
