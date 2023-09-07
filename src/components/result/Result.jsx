@@ -72,12 +72,12 @@ export const Result = () => {
             {
               document.getElementById(key).innerHTML = "";
               document.getElementById(key).innerHTML += '<img src="' + confirm_check + '" />';
-              document.getElementById(key).innerHTML += '<h2>'+ value[1]*100 +'%</h2>';
+              document.getElementById(key).innerHTML += '<h2>'+ (value[1]*100).toFixed(2) +'%</h2>';
             }
             else if(value[0] === "No")
             {
               document.getElementById(key).innerHTML = "";
-              document.getElementById(key).innerHTML += '<h2>'+ value[1]*100 +'%</h2>';
+              document.getElementById(key).innerHTML += '<h2>'+ (value[1]*100).toFixed(2) +'%</h2>';
               document.getElementById(key).innerHTML += '<img src="' + confirm_cross + '" />';
             }
           });
