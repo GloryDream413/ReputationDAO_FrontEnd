@@ -17,6 +17,9 @@ import menu_button from '../../assets/menu_button.svg'
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
 import { connectWallet } from '../../core/interact';
+import * as env from "../../env";
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 export const Result = () => {
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
@@ -29,6 +32,66 @@ export const Result = () => {
     };
     connectWalletPressed();
   })
+
+  useEffect(()=>{
+    const getGensisTime = async () => {
+      try {
+        const response = await axios.get(`${env.API_URL}/genesis/get_selection_time`);
+        if(response.status === 200)
+        {
+          const currentDate = new Date().getTime() / 1000;
+          setSeconds(parseInt(response.data.data - currentDate));
+        }
+        else
+        {
+          toast.error('Failed Getting Gensis Time');
+        }
+      } catch (error) {
+        toast.error('Error Getting Gensis Time:' + error);
+      }
+    };
+    getGensisTime();
+  }, [])
+
+  useEffect(()=>{
+    const getResult = async () => {
+      try {
+        const response = await axios.get(`${env.API_URL}/genesis/get_result`);
+        if(response.status === 200)
+        {
+          console.log(response.data.data[0].criteria);
+          document.getElementById("1").textContent = response.data.data[0].principles[0];
+          document.getElementById("2").textContent = response.data.data[0].principles[1];
+          document.getElementById("3").textContent = response.data.data[0].principles[2];
+          document.getElementById("4").textContent = response.data.data[0].principles[3];
+          document.getElementById("5").textContent = response.data.data[0].principles[4];
+
+          Object.keys(response.data.data[0].criteria).forEach(key => {
+            const value = response.data.data[0].criteria[key];
+            if(value[0] === "Yes")
+            {
+              document.getElementById(key).innerHTML = "";
+              document.getElementById(key).innerHTML += '<img src="' + confirm_check + '" />';
+              document.getElementById(key).innerHTML += '<h2>'+ value[1]*100 +'%</h2>';
+            }
+            else if(value[0] === "No")
+            {
+              document.getElementById(key).innerHTML = "";
+              document.getElementById(key).innerHTML += '<h2>'+ value[1]*100 +'%</h2>';
+              document.getElementById(key).innerHTML += '<img src="' + confirm_cross + '" />';
+            }
+          });
+        }
+        else
+        {
+          toast.error('Failed Getting Result');
+        }
+      } catch (error) {
+        toast.error('Error Getting Result:' + error);
+      }
+    };
+    getResult();
+  }, [])
 
   useEffect(() => {
     //Implementing the setInterval method
@@ -108,87 +171,71 @@ export const Result = () => {
                 <div className='userselectboard'>
                     <div className='first'>
                         <h1>1.</h1>
-                        <label></label>
+                        <label id="1"></label>
                     </div>
                     <div className='second'>
                         <h1>2.</h1>
-                        <label></label>
+                        <label id="2"></label>
                     </div>
                     <div className='third'>
                         <h1>3.</h1>
-                        <label></label>
+                        <label id="3"></label>
                     </div>
                     <div className='fourth'>
                         <h1>4.</h1>
-                        <label></label>
+                        <label id="4"></label>
                     </div>
                     <div className='fifth'>
                         <h1>5.</h1>
-                        <label></label>
+                        <label id="5"></label>
                     </div>
                 </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Commercialise reputation and verification services.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Commercialise reputation and verification services.">
                 </div>
               </div>
               <div className='option'>
                 <h1>Provide liquidity to other protocols.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Provide liquidity to other protocols.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Utilise treasury funds in yield and staking.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Utilise treasury funds in yield and staking.">
                 </div>
               </div>
               <div className='option'>
                 <h1>Fund bad actor detection and bounty hunting.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Fund bad actor detection and bounty hunting.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Fund development of RDAO ecosystem.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Fund development of RDAO ecosystem.">
                 </div>
               </div>
               <div className='option'>
                 <h1>Actively manage DAO as an investment fund.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Actively manage DAO as an investment fund.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Invest in early stage protocols.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Invest in early stage protocols.">
                 </div>
               </div>
               <div className='option'>
                 <h1>Invest in NFT’s.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Invest in NFT’s.">
                 </div>
               </div>
             </div>
@@ -258,25 +305,25 @@ export const Result = () => {
             </div>
             <div className='userselect'>
                 <div className='userselectboard'>
-                    <div className='first'>
+                <div className='first'>
                         <h1>1.</h1>
-                        <label></label>
+                        <label id="1"></label>
                     </div>
                     <div className='second'>
                         <h1>2.</h1>
-                        <label></label>
+                        <label id="2"></label>
                     </div>
                     <div className='third'>
                         <h1>3.</h1>
-                        <label></label>
+                        <label id="3"></label>
                     </div>
                     <div className='fourth'>
                         <h1>4.</h1>
-                        <label></label>
+                        <label id="4"></label>
                     </div>
                     <div className='fifth'>
                         <h1>5.</h1>
-                        <label></label>
+                        <label id="5"></label>
                     </div>
                 </div>
             </div>
@@ -284,72 +331,56 @@ export const Result = () => {
             <div className='options'>
               <div className='option'>
                 <h1>Commercialise reputation and verification services.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Commercialise reputation and verification services.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Provide liquidity to other protocols.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Provide liquidity to other protocols.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Utilise treasury funds in yield and staking.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Utilise treasury funds in yield and staking.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Fund bad actor detection and bounty hunting.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Fund bad actor detection and bounty hunting.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Fund development of RDAO ecosystem.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Fund development of RDAO ecosystem.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Actively manage DAO as an investment fund.</h1>
-                <div className='checkbuttons'>
-                  <img src={confirm_check} alt="confirm_check"/>
-                  <h2>75%</h2>
+                <div className='checkbuttons' id="Actively manage DAO as an investment fund.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Invest in early stage protocols.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Invest in early stage protocols.">
                 </div>
               </div>
             </div>
             <div className='options'>
               <div className='option'>
                 <h1>Invest in NFT’s.</h1>
-                <div className='checkbuttons'>
-                  <h2>55%</h2>
-                  <img src={confirm_cross} alt="confirm_cross"/>
+                <div className='checkbuttons' id="Invest in NFT’s.">
                 </div>
               </div>
             </div>

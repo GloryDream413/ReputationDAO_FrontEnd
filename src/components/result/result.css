@@ -342,7 +342,7 @@ body, html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 270px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -360,7 +360,7 @@ body, html {
 
 .timedialogdisplay h1 {
   display: flex;
-  width: 190px;
+  width: 200px;
   height: 30px;
   flex-direction: column;
   justify-content: center;
@@ -774,7 +774,7 @@ body, html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 270px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -792,7 +792,7 @@ body, html {
 
 .mainsection1_mobile .content .timedialogdisplay h1 {
   display: flex;
-  width: 190px;
+  width: 200px;
   height: 30px;
   flex-direction: column;
   justify-content: center;

@@ -18,7 +18,7 @@ import confirm_cross from '../../assets/confirm_cross.png';
 import menu_button from '../../assets/menu_button.svg'
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
-import { connectWallet, signMessageHash } from '../../core/interact';
+import { connectWallet } from '../../core/interact';
 import { toast } from 'react-toastify';
 import * as env from "../../env"
 import axios from 'axios';
