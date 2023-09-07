@@ -21,6 +21,16 @@ export const Collectemail = () => {
   const navigate = useNavigate();
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
   const [isOpen, SetMenuButtonStatus] = useState(false);
+
+  const handleKeyDown = (event) => {
+    if (event.keyCode === 13) {
+      // Enter key was pressed
+      event.preventDefault(); // Prevent form submission
+      // Call your submit function here
+      onSavingEmail();
+    }
+  };
+
   useEffect(()=>{
     const connectWalletPressed = async () => {
       const walletResponse = await connectWallet();
@@ -108,7 +118,9 @@ export const Collectemail = () => {
                 <input 
                   placeholder='Insert email address'
                   value={email}
-                  onChange={onEmailChange} />
+                  onChange={onEmailChange}
+                  onKeyDown={handleKeyDown}
+                />
             </div>
           </div>
           <div className='buttoncontent'>
