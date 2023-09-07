@@ -583,3 +583,7 @@ body, html {
   font-weight: 600;
   line-height: normal;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
