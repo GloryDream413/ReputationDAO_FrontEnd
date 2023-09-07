@@ -15,6 +15,7 @@ import general_check from '../../assets/general_check.png';
 import confirm_check from '../../assets/confirm_check.png';
 import general_cross from '../../assets/general_cross.png';
 import confirm_cross from '../../assets/confirm_cross.png';
+import menu_button from '../../assets/menu_button.svg'
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
 import { connectWallet, signMessageHash } from '../../core/interact';
@@ -39,6 +40,7 @@ export const Criteria = () => {
   const [ item6Status, SetItem6Status ] = useState(0);
   const [ item7Status, SetItem7Status ] = useState(0);
   const [ item8Status, SetItem8Status ] = useState(0);
+  const [isOpen, SetMenuButtonStatus] = useState(false);
 
   useEffect(()=>{
     const connectWalletPressed = async () => {
@@ -178,6 +180,10 @@ export const Criteria = () => {
       toast.error('Error signing message:' + error);
     }
     document.getElementById('submit').disabled = false;
+  }
+
+  const onMenuButtonClick = () => {
+    SetMenuButtonStatus(!isOpen);
   }
 
   const below600 = useMedia('(max-width: 600px)')
@@ -381,25 +387,32 @@ export const Criteria = () => {
       )}
       {below600 && (
       <div className="mainsection_mobile">
+        <div className='menu_mobile'>
+          <div className='menu_button'>
+            <img src={menu_button} alt="menu_button" onClick={onMenuButtonClick}/>
+          </div>
+          {isOpen && (
+          <div className='menuitems'>
+            <Link to="/collectemail">
+            <div className='genesis_icon'>
+                <img src={genesis_icon} alt="genesis_icon"/>
+                <h1>Genesis</h1>
+            </div>
+            </Link>
+            <div className='dao_icon'>
+                <img src={dao_icon} alt="dao_icon"/>
+                <h1>DAO</h1>
+            </div>
+            <div className='airdrop_icon'>
+                <img src={airdrop_icon} alt="airdrop_icon"/>
+                <h1>Airdrop</h1>
+            </div>
+          </div>
+          )}
+        </div>
         <div className='menu'>
           <div className='logoitem'>
             <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-            <div className='menuitems'>
-              <Link to="/collectemail">
-              <div className='genesis_icon'>
-                  <img src={genesis_icon} alt="genesis_icon"/>
-                  <h1>Genesis</h1>
-              </div>
-              </Link>
-              <div className='dao_icon'>
-                  <img src={dao_icon} alt="dao_icon"/>
-                  <h1>DAO</h1>
-              </div>
-              <div className='airdrop_icon'>
-                  <img src={airdrop_icon} alt="airdrop_icon"/>
-                  <h1>Airdrop</h1>
-              </div>
-            </div>
           </div>
           <div className='social_icon'>
               <a href="https://docs.reputationdao.co/"><img src={vector_icon} alt="vector_icon"/></a>

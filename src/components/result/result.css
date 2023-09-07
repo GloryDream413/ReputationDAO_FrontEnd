@@ -602,3 +602,116 @@ body, html {
   font-weight: 400;
   line-height: normal;
 }
+
+
+
+
+
+
+
+
+
+
+.mainsection_mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainsection_mobile .menu_mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mainsection_mobile .menu_mobile a {
+  text-decoration: none;
+}
+
+.mainsection_mobile .menu_mobile .menu_button {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+
+.mainsection_mobile .menu_mobile .menuitems {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .genesis_icon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .genesis_icon img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .genesis_icon h1 {
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .dao_icon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .dao_icon img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .dao_icon h1 {
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .airdrop_icon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .airdrop_icon img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.mainsection_mobile .menu_mobile .menuitems .airdrop_icon h1 {
+  flex-shrink: 0;
+  color: #888;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 10px;
+}
