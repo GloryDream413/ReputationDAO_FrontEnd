@@ -1075,3 +1075,49 @@ body, html {
   font-weight: 500;
   line-height: normal;
 }
+
+.mainsection1_mobile .content .real-content .options {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+
+.mainsection1_mobile .content .real-content .options .option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #68C0FF;
+  background: #FFF;
+}
+
+.mainsection1_mobile .content .real-content .options .option h1 {
+  margin-left: 10px;
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mainsection1_mobile .content .real-content .options .option .checkbuttons {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainsection1_mobile .content .real-content .options .option .checkbuttons img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
