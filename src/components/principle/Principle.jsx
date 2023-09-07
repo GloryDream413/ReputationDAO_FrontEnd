@@ -129,9 +129,9 @@ export const Principle = () => {
               </div>
           </div>
           <div className='social_icon'>
-              <img src={vector_icon} alt="vector_icon"/>
-              <img src={twitter_icon} alt="twitter_icon"/>
-              <img src={telegram_icon} alt="telegram_icon"/>
+              <a href="https://docs.reputationdao.co/"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN"><img src={telegram_icon} alt="telegram_icon"/></a>
           </div>
         </div>
         <div className='content'>
@@ -221,9 +221,9 @@ export const Principle = () => {
               </div>
           </div>
           <div className='social_icon'>
-              <img src={vector_icon} alt="vector_icon"/>
-              <img src={twitter_icon} alt="twitter_icon"/>
-              <img src={telegram_icon} alt="telegram_icon"/>
+              <a href="https://docs.reputationdao.co/"><img src={vector_icon} alt="vector_icon"/></a>
+              <a href="https://twitter.com/ReputationDAO"><img src={twitter_icon} alt="twitter_icon"/></a>
+              <a href="https://discord.gg/qz4YNZNkHN"><img src={telegram_icon} alt="telegram_icon"/></a>
           </div>
         </div>
         <div className='content'>
