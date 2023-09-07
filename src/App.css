@@ -302,6 +302,16 @@ body, html {
   align-items: center;
 }
 
+.mainsection_mobile .menu_mobile {
+  width: 100%;
+  height: 40px;
+}
+
+.mainsection_mobile .menu_mobile .menu_button {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
 .mainsection_mobile .content a {
   text-decoration: none;
 }

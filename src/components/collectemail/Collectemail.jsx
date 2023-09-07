@@ -10,6 +10,7 @@ import dao_icon from '../../assets/dao_icon.png'
 import vector_icon from '../../assets/vector_icon.svg'
 import twitter_icon from '../../assets/twitter_icon.svg'
 import telegram_icon from '../../assets/telegram_icon.svg'
+import menu_button from '../../assets/menu_button.svg'
 import connected_status_icon from '../../assets/connected_status.png'
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
@@ -113,10 +114,14 @@ export const Collectemail = () => {
       )}
       {below600 && (
       <div className="mainsection_mobile">
+        <div className='menu_mobile'>
+          <div className='menu_button'>
+            <img src={menu_button} alt="menu_button"/>
+          </div>
+        </div>
         <div className='menu'>
           <div className='logoitem'>
             <img src={WalletConnectLogo} alt="walletconnectlogo"/>
-            
           </div>
           <div className='social_icon'>
               <img src={vector_icon} alt="vector_icon"/>
