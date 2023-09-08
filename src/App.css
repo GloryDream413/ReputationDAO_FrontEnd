@@ -591,3 +591,44 @@ body, html {
 .scale-125:hover {
   transform: scale(1.25);
 }
+
+.inline {
+  display: inline;
+}
+
+.w-4 {
+  width: 16px;
+}
+
+.h-4 {
+  height: 16px;
+}
+
+.w-8 {
+  width: 32px;
+}
+
+.h-8 {
+  height: 32px;
+}
+
+.mr-3 {
+  margin-right: 12px;
+}
+
+.text-white {
+  color: white;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

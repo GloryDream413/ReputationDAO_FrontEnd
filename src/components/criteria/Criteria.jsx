@@ -531,7 +531,13 @@ export const Criteria = () => {
               >
                 {!pending && "Submit"}
                 {pending && (
-                  <span className="flex items-center hover:cursor-wait text-[12px] sm:text-[18px] md:text-[24px] lg:text-[28px]">
+                  <span className="flex items-center hover:cursor-wait text-[12px] sm:text-[18px] md:text-[24px] lg:text-[28px]"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      fontSize: 28
+                    }}
+                  >
                     <svg
                       aria-hidden="true"
                       role="status"
