@@ -205,7 +205,7 @@ export const Principle = () => {
       </div>
       )}
       {below600 && (
-      <div className="mainsection_mobile">
+      <div className="mainsection2_mobile">
         <div className='menu_mobile'>
           <div className='menu_button'>
             <img src={menu_button} alt="menu_button" onClick={onMenuButtonClick}/>
