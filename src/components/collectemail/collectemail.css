@@ -1,5 +1,5 @@
-.mainsection .content a {
-  text-decoration: none;
+.mainsection .content .real-content {
+  width: 100%;
 }
 
 .mainsection .content .real-content .email {

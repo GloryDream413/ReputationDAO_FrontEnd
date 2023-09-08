@@ -172,7 +172,6 @@ export const Collectemail = () => {
         </div>
         <div className='content'>
           <div className='real-content'>
-            
             <div className='title'>
                 <h1>Launch the Reputation DAO by participating in the genesis vote.</h1>
             </div>
