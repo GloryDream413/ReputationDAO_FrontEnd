@@ -179,7 +179,6 @@ export const Criteria = () => {
         }
       );
       setPending(false);
-      console.log(response);
       if (response.status === 200) {
         const rlt = response.data;
         console.log(rlt);
@@ -193,7 +192,8 @@ export const Criteria = () => {
         toast.error("API ${env.API_URL} call failed");
       }
     } catch (error) {
-      toast.error("Error signing message:" + error);
+      setPending(false);
+      toast.error("Error signing message:" + error.message);
     }
     document.getElementById("submit").disabled = false;
   };
@@ -302,6 +302,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem1}
                       />
                     )}
@@ -312,6 +313,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem1}
                       />
                     )}
@@ -327,6 +329,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem2}
                       />
                     )}
@@ -337,6 +340,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem2}
                       />
                     )}
@@ -354,6 +358,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem3}
                       />
                     )}
@@ -364,6 +369,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem3}
                       />
                     )}
@@ -379,6 +385,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem4}
                       />
                     )}
@@ -389,6 +396,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem4}
                       />
                     )}
@@ -406,6 +414,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem5}
                       />
                     )}
@@ -416,6 +425,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem5}
                       />
                     )}
@@ -431,6 +441,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem6}
                       />
                     )}
@@ -441,6 +452,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem6}
                       />
                     )}
@@ -458,6 +470,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem7}
                       />
                     )}
@@ -468,6 +481,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem7}
                       />
                     )}
@@ -483,6 +497,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem8}
                       />
                     )}
@@ -493,6 +508,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem8}
                       />
                     )}
@@ -503,17 +519,17 @@ export const Criteria = () => {
             <div className="buttoncontent">
               <button
                 id="submit"
-                className="text-white text-center text-[12px] sm:text-[18px] md:text-[24px] lg:text-[36px] not-italic font-medium"
+                className="text-white text-center text-[12px] sm:text-[18px] md:text-[24px] lg:text-[36px] not-italic font-medium hover:scale-105"
                 style={{ fontFamily: "Inter", lineHeight: "normal" }}
                 onClick={onSubmit}
               >
                 {!pending && "Submit"}
                 {pending && (
-                  <>
+                  <span className="flex items-center hover:cursor-wait text-[12px] sm:text-[18px] md:text-[24px] lg:text-[28px]">
                     <svg
                       aria-hidden="true"
                       role="status"
-                      class="inline w-4 h-4 mr-3 text-white animate-spin"
+                      className="inline w-8 h-8 mr-3 text-white animate-spin"
                       viewBox="0 0 100 101"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -528,7 +544,7 @@ export const Criteria = () => {
                       />
                     </svg>
                     Signing...
-                  </>
+                  </span>
                 )}
               </button>
             </div>
@@ -566,7 +582,7 @@ export const Criteria = () => {
             </div>
             {isOpen && (
               <div className="menu">
-                <div className="menuitems">
+                <div className="menuitems py-1">
                   <Link to="/collectemail">
                     <div className="genesis_icon">
                       <img src={genesis_icon} alt="genesis_icon" />
@@ -629,7 +645,7 @@ export const Criteria = () => {
                   .
                 </h1>
               </div>
-              <div className="options">
+              <div className="options mt-4">
                 <div className="option">
                   <h1>Commercialise reputation and verification services.</h1>
                   <div className="checkbuttons">
@@ -640,6 +656,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem1}
                       />
                     )}
@@ -650,6 +667,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem1}
                       />
                     )}
@@ -667,6 +685,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem2}
                       />
                     )}
@@ -677,6 +696,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem2}
                       />
                     )}
@@ -694,6 +714,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem3}
                       />
                     )}
@@ -704,6 +725,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem3}
                       />
                     )}
@@ -721,6 +743,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem4}
                       />
                     )}
@@ -731,6 +754,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem4}
                       />
                     )}
@@ -748,6 +772,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem5}
                       />
                     )}
@@ -758,6 +783,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem5}
                       />
                     )}
@@ -775,6 +801,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem6}
                       />
                     )}
@@ -785,6 +812,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem6}
                       />
                     )}
@@ -802,6 +830,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem7}
                       />
                     )}
@@ -812,6 +841,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem7}
                       />
                     )}
@@ -829,6 +859,7 @@ export const Criteria = () => {
                       <img
                         src={general_check}
                         alt="general_check"
+                        className="hover:scale-125"
                         onClick={onCheckItem8}
                       />
                     )}
@@ -839,6 +870,7 @@ export const Criteria = () => {
                       <img
                         src={general_cross}
                         alt="general_cross"
+                        className="hover:scale-125"
                         onClick={onCrossItem8}
                       />
                     )}
@@ -849,7 +881,7 @@ export const Criteria = () => {
             <div className="buttoncontent">
               <button
                 id="submit"
-                className="text-white text-center text-[12px] sm:text-[18px] md:text-[24px] lg:text-[36px] not-italic font-medium"
+                className="text-white text-center text-[12px] sm:text-[18px] md:text-[24px] lg:text-[36px] not-italic font-medium hover:scale-105"
                 style={{ fontFamily: "Inter", lineHeight: "normal" }}
                 onClick={onSubmit}
               >

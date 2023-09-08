@@ -124,7 +124,7 @@ export const Collectemail = () => {
             </div>
           </div>
           <div className='buttoncontent'>
-            <button onClick={onSavingEmail}><h1>Next</h1></button>
+            <button className="hover:scale-105" onClick={onSavingEmail}><h1>Next</h1></button>
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@ export const Collectemail = () => {
           </div>
           {isOpen && (
           <div className='menu'>
-            <div className='menuitems'>
+            <div className='menuitems py-1'>
                 <Link to="/collectemail">
                 <div className='genesis_icon'>
                     <img src={genesis_icon} alt="genesis_icon"/>
@@ -189,7 +189,7 @@ export const Collectemail = () => {
             </div>
           </div>
           <div className='buttoncontent'>
-            <button onClick={onSavingEmail}><h1>Next</h1></button>
+            <button className="hover:scale-105" onClick={onSavingEmail}><h1>Next</h1></button>
           </div>
         </div>
       </div>

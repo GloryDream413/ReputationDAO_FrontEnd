@@ -262,7 +262,7 @@ export const Result = () => {
           </div>
           {isOpen && (
           <div className='menu'>
-            <div className='menuitems'>
+            <div className='menuitems py-1'>
                 <Link to="/collectemail">
                 <div className='genesis_icon'>
                     <img src={genesis_icon} alt="genesis_icon"/>
