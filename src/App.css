@@ -584,6 +584,10 @@ body, html {
   line-height: normal;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.scale-105:hover {
+  transform: scale(1.05);
+}
+
+.scale-125:hover {
+  transform: scale(1.25);
+}

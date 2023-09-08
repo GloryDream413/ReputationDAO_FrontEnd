@@ -124,7 +124,7 @@ export const Collectemail = () => {
             </div>
           </div>
           <div className='buttoncontent'>
-            <button className="hover:scale-105" onClick={onSavingEmail}><h1>Next</h1></button>
+            <button className="scale-105" onClick={onSavingEmail}><h1>Next</h1></button>
           </div>
         </div>
       </div>
@@ -189,7 +189,7 @@ export const Collectemail = () => {
             </div>
           </div>
           <div className='buttoncontent'>
-            <button className="hover:scale-105" onClick={onSavingEmail}><h1>Next</h1></button>
+            <button className="scale-105" onClick={onSavingEmail}><h1>Next</h1></button>
           </div>
         </div>
       </div>

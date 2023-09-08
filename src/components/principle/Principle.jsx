@@ -182,24 +182,24 @@ export const Principle = () => {
                   </div>
               </div>
               <div className='items1'>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Sustainability" onClick={onClickItem}>Sustainability</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Prosperity" onClick={onClickItem}>Prosperity</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Security" onClick={onClickItem}>Security</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Collaboration" onClick={onClickItem}>Collaboration</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Growth" onClick={onClickItem}>Growth</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Improvement" onClick={onClickItem}>Improvement</div>
+                  <div className='selectedItem1' id="Sustainability" onClick={onClickItem}>Sustainability</div>
+                  <div className='selectedItem1' id="Prosperity" onClick={onClickItem}>Prosperity</div>
+                  <div className='selectedItem1' id="Security" onClick={onClickItem}>Security</div>
+                  <div className='selectedItem1' id="Collaboration" onClick={onClickItem}>Collaboration</div>
+                  <div className='selectedItem1' id="Growth" onClick={onClickItem}>Growth</div>
+                  <div className='selectedItem1' id="Improvement" onClick={onClickItem}>Improvement</div>
               </div>
               <div className='items2'>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Innovation" onClick={onClickItem}>Innovation</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Community" onClick={onClickItem}>Community</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Meaning" onClick={onClickItem}>Meaning</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Reputation" onClick={onClickItem}>Reputation</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Reliability" onClick={onClickItem}>Reliability</div>
-                  <div className='flex flex-row items-center justify-center mr-5 w-[120px] hover:scale-105 h-[35px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Value" onClick={onClickItem}>Value</div>
+                  <div className='selectedItem1' id="Innovation" onClick={onClickItem}>Innovation</div>
+                  <div className='selectedItem1' id="Community" onClick={onClickItem}>Community</div>
+                  <div className='selectedItem1' id="Meaning" onClick={onClickItem}>Meaning</div>
+                  <div className='selectedItem1' id="Reputation" onClick={onClickItem}>Reputation</div>
+                  <div className='selectedItem1' id="Reliability" onClick={onClickItem}>Reliability</div>
+                  <div className='selectedItem1' id="Value" onClick={onClickItem}>Value</div>
               </div>
           </div>
           <div className='buttoncontent'>
-              <button className="hover:scale-105" onClick={onSavingPrinciple}><h1>Next</h1></button>
+              <button className="scale-105" onClick={onSavingPrinciple}><h1>Next</h1></button>
           </div>
         </div>
       </div>
@@ -278,28 +278,28 @@ export const Principle = () => {
                   </div>
               </div>
               <div className='items1'>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Sustainability" onClick={onClickItem}>Sustainability</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Prosperity" onClick={onClickItem}>Prosperity</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Security" onClick={onClickItem}>Security</div>
+                <div className='selectedItem' id="Sustainability" onClick={onClickItem}>Sustainability</div>
+                <div className='selectedItem' id="Prosperity" onClick={onClickItem}>Prosperity</div>
+                <div className='selectedItem' id="Security" onClick={onClickItem}>Security</div>
               </div>
               <div className='items2'>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Collaboration" onClick={onClickItem}>Collaboration</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Growth" onClick={onClickItem}>Growth</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Improvement" onClick={onClickItem}>Improvement</div>
+                <div className='selectedItem' id="Collaboration" onClick={onClickItem}>Collaboration</div>
+                <div className='selectedItem' id="Growth" onClick={onClickItem}>Growth</div>
+                <div className='selectedItem' id="Improvement" onClick={onClickItem}>Improvement</div>
               </div>
               <div className='items3'>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Innovation" onClick={onClickItem}>Innovation</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Community" onClick={onClickItem}>Community</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Meaning" onClick={onClickItem}>Meaning</div>
+                <div className='selectedItem' id="Innovation" onClick={onClickItem}>Innovation</div>
+                <div className='selectedItem' id="Community" onClick={onClickItem}>Community</div>
+                <div className='selectedItem' id="Meaning" onClick={onClickItem}>Meaning</div>
               </div>
               <div className='items4'>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Reputation" onClick={onClickItem}>Reputation</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Reliability" onClick={onClickItem}>Reliability</div>
-                <div className='flex flex-row items-center justify-center mr-[5px] w-[100px] hover:scale-105 h-[25px] shrink-0 rounded border border-[#8E66FF] border-[1.5px] border-solid hover:cursor-pointer bg-white hover:text-green-500 hover:font-medium' id="Value" onClick={onClickItem}>Value</div>
+                <div className='selectedItem' id="Reputation" onClick={onClickItem}>Reputation</div>
+                <div className='selectedItem' id="Reliability" onClick={onClickItem}>Reliability</div>
+                <div className='selectedItem' id="Value" onClick={onClickItem}>Value</div>
               </div>
           </div>
           <div className='buttoncontent'>
-              <button className="hover:scale-105" onClick={onSavingPrinciple}><h1>Next</h1></button>
+              <button className="scale-105" onClick={onSavingPrinciple}><h1>Next</h1></button>
           </div>
         </div>
       </div>
