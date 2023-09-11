@@ -24,7 +24,7 @@ import { toast } from 'react-toastify';
 export const Result = () => {
   const { walletAddress, SetWalletAddress } = useContext(UserContext);
   const [isOpen, SetMenuButtonStatus] = useState(false);
-  const [ seconds, setSeconds ] = useState(30 * 24 * 60 * 60);
+  const [ seconds, setSeconds ] = useState(0);
   useEffect(()=>{
     const connectWalletPressed = async () => {
       const walletResponse = await connectWallet();
@@ -93,12 +93,50 @@ export const Result = () => {
     getResult();
   }, [])
 
+  const getResult = async () => {
+    try {
+      const response = await axios.get(`${env.API_URL}/genesis/get_result`);
+      if(response.status === 200)
+      {
+        console.log(response.data.data[0].criteria);
+        document.getElementById("1").textContent = response.data.data[0].principles[0];
+        document.getElementById("2").textContent = response.data.data[0].principles[1];
+        document.getElementById("3").textContent = response.data.data[0].principles[2];
+        document.getElementById("4").textContent = response.data.data[0].principles[3];
+        document.getElementById("5").textContent = response.data.data[0].principles[4];
+
+        Object.keys(response.data.data[0].criteria).forEach(key => {
+          const value = response.data.data[0].criteria[key];
+          if(value[0] === "Yes")
+          {
+            document.getElementById(key).innerHTML = "";
+            document.getElementById(key).innerHTML += '<img src="' + confirm_check + '" />';
+            document.getElementById(key).innerHTML += '<h2>'+ (value[1]*100).toFixed(2) +'%</h2>';
+          }
+          else if(value[0] === "No")
+          {
+            document.getElementById(key).innerHTML = "";
+            document.getElementById(key).innerHTML += '<h2>'+ (value[1]*100).toFixed(2) +'%</h2>';
+            document.getElementById(key).innerHTML += '<img src="' + confirm_cross + '" />';
+          }
+        });
+      }
+      else
+      {
+        toast.error('Failed Getting Result');
+      }
+    } catch (error) {
+      toast.error('Error Getting Result:' + error);
+    }
+  };
+
   useEffect(() => {
     //Implementing the setInterval method
     const interval = setInterval(() => {
       if(seconds !== 0)
       {
         setSeconds(seconds - 1);
+        getResult();
       }
     }, 1000);
 
