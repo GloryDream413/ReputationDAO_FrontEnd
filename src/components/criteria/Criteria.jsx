@@ -171,6 +171,7 @@ export const Criteria = () => {
         {
           data: data,
           signData: signature,
+          email: email
         },
         {
           headers: {
