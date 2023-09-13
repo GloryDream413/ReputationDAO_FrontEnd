@@ -18,10 +18,8 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  height: 100vh;
+  min-height: 100vh;
 }
-
-
 
 .mainsection .menu {
   display: flex;
@@ -312,7 +310,7 @@ body, html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .mainsection_mobile .menu_mobile {
