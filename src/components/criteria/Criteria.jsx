@@ -187,7 +187,7 @@ export const Criteria = () => {
           toast.success("Sign success");
           navigate("/result");
         } else {
-          toast.error("Sign failed:");
+          toast.error(`Sign failed! ${rlt.msg ? rlt.msg: ''}`);
         }
       } else {
         toast.error("API ${env.API_URL} call failed");
